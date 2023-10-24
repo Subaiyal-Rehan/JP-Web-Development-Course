@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Landing Page */
+
+.firstContainer {
+    background-image: url(Images/First_BG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 45vw;
+    padding: 0 0 0 70px;
+    height: 115px;
+}
+
+.logo img {
+    width: 205px;
+}
+
+.content {
+    width: 55vw;
+}
+
+.content ul {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.content ul li a {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s ease-in-out;
+}
+
+.content ul li a:hover {
+    color: #D60E0A;
+}
+
+.content ul li:nth-child(1) a {
+    color: #D60E0A;
+}
+
+.landingPage {
+    font-family: 'Roboto Condensed', sans-serif;
+    position: relative;
+    top: 240px;
+    left: 240px;
+    width: 612px;
+    display: flex;
+    flex-direction: column;
+}
+
+.landingPage span,
+#about-para span,
+.footer-logo span {
+    color: #D60E0A;
+}
+
+.landingPage h2 {
+    font-size: 55px;
+    color: rgb(214, 214, 214);
+}
+
+.landingPage h1 {
+    padding: 6px 0;
+    color: white;
+    font-size: 80px;
+}
+
+.div4 button {
+    border-radius: 30px;
+    padding: 13px 35px;
+    margin-top: 18px;
+    border: none;
+    background-color: #f0bf0c;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.div4 button:hover {
+    background-color: #b99101;
+}
+
+.div4 button a {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    color: #000000;
+}
+
+/* About Me Section */
+
+.about {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(Images/Second_BG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 25px auto 0;
+    padding: 0 20px;
+}
+
+.container h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 36px;
+    color: #ffffff;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture {
+    margin-right: 40px;
+}
+
+.profile-picture img {
+    width: 540px;
+}
+
+.skills {
+    flex-grow: 1;
+    text-align: left;
+    position: relative;
+    bottom: 17px;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill p {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 36px;
+}
+
+.progress {
+    background-color: #ddd;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    height: 100%;
+    border-radius: 5px;
+    background-color: #F0C62D;
+    color: #fff;
+    text-align: center;
+}
+
+#about-para {
+    margin-top: 15px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.wide-bar {
+    background-color: rgb(62, 62, 62);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 15px 0;
+    margin: 40px 0;
+    border-radius: 50px;
+}
+
+.wide-bar p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    padding: 10px;
+}
+
+/* My Projects Section */
+
+.myWork {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(Images/Second_BG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.container2 {
+    max-width: 1150px;
+    margin: 25px auto 18px;
+    padding: 0 20px;
+}
+
+.container2 h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.container2 span {
+    color: #D60E0A;
+    font-size: 19px;
+    font-family: 'Roboto Condensed', sans-serif;
+    position: relative;
+    right: 3px;
+}
+
+.mywork-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagebox img {
+    margin: 15px 0;
+    width: 100%;
+    border: 2px solid black;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.imagebox img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 19px rgba(0, 0, 0, 0.5);
+    opacity: 0.9;
+}
+
+/* Contact Me Section */
+
+.contact {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000C14;
+    color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.container3 {
+    max-width: 1300px;
+    margin: 25px auto 18px;
+    padding: 0 20px;
+}
+
+.container3 h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 36px;
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 35px;
+}
+
+.contact-form form input {
+    background-color: rgb(176, 176, 176);
+    border: none;
+}
+
+.contact-form .name {
+    padding: 14px;
+    width: 49.8%;
+}
+
+.contact-form #email {
+    width: 100%;
+    margin: 10px 0;
+    padding: 14px;
+}
+
+.contact-form #msg {
+    width: 100%;
+    padding: 14px;
+    height: 230px;
+    background-color: rgb(176, 176, 176);
+    border: none;
+}
+
+::placeholder {
+    font-size: 17px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.contact-form .div4 {
+    text-align: left;
+}
+
+.contact-form .div4 a {
+    font-size: 21px;
+}
+
+/* Footer Section */
+
+.footer {
+    background-color: rgb(62, 62, 62);
+    color: white;
+    text-align: center;
+}
+
+.container4 {
+    display: flex;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0px auto;
+    padding: 20px 20px 40px;
+}
+
+.footer-div {
+    width: 40vw;
+}
+
+.footer-div h3 {
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.footer-logo {
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    width: 20vw;
+    font-size: 16px;
+}
+
+.footer-logo img {
+    width: 205px;
+}
+
+.footer-logo p {
+    margin-top: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links {
+    position: relative;
+    top: 34px;
+}
+
+.footer-links li {
+    font-size: 20px;
+    margin: 24px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-links li a {
+    color: rgb(198, 198, 198);
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.footer-social .social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 145px;
+    position: relative;
+    left: 176px;
+    top: 23px;
+}
+
+.footer-social .social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+    margin: 0px 20px 0px;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-social .social-icons a:nth-child(1) {
+    margin-bottom: 20px;
+}
+
+.footer-social .social-icons a:nth-child(1):hover {
+    color: #548cfb;
+}
+
+.footer-social .social-icons a:nth-child(2):hover {
+    color: #00acee;
+}
+
+.footer-social .social-icons a:nth-child(3):hover {
+    color: #c4302b;
+}
+
+.footer-social .social-icons a:nth-child(4):hover {
+    color: #FBBC05;
+}
+
+.last-para {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(226, 226, 226);
+    font-size: 17px;
+    padding-bottom: 20px;
+}
+
+.last-para span {
+    color: #F0C62D;
+}
