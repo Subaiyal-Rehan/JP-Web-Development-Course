@@ -1,2 +1,2 @@
-# JP-Web-Development-Course
-Jawan Pakistan Web and App Delevopment Course Source Code
+# Web Development Course Source Code
+A repository containing the source code for the Jawan Pakistan Web and App Development Course.
