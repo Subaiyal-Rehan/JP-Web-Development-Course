@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Assignments</title>
+  <link rel="shortcut icon" href="Images/Main_Logo.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="header container-fluid bg-body-tertiary">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <img class="bi me-2" width="40" src="Images/Main_Logo.png">
+        <span class="fs-4">My Assignments</span>
+      </a>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="#AboutMe" class="nav-link">About Me</a></li>
+        <li class="nav-item"><a href="#MyWork" class="nav-link">My Work</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Contact Me</a></li>
+      </ul>
+    </header>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="container-fluid my-5">
+    <div class="p-5 text-center bg-body-tertiary border-bottom border-top">
+      <img class="bi mt-4 mb-3" height="100" src="Images/Hero_Pic.png">
+      <h1 class="text-body-emphasis display-4">Explore My Web Development Journey</h1>
+      <p class="col-lg-8 mx-auto fs-4 text-muted">
+        Welcome to my <code>Digital Portfolio</code>, where I showcase my web development assignments and
+        projects. Dive into the world of HTML, CSS, and JavaScript through my work.
+      </p>
+      <div class="d-inline-flex gap-2 mb-5">
+        <a href="#My-Assignments">
+          <button class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" type="button">
+            View Assignments
+          </button>
+        </a>
+        <a href="#">
+          <button class="btn btn-outline-secondary btn-lg px-4 rounded-pill" type="button">
+            Get in Touch
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Why this page was made section -->
+  <div class="container px-4 py-5">
+    <h2 class="pb-2 border-bottom">The Purpose Behind This Page</h2>
+
+    <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+      <div class="col d-flex flex-column align-items-start gap-2">
+        <h2 class="fw-bold text-body-emphasis">Sharing My Web Development Journey</h2>
+        <p class="text-body-secondary">This webpage serves as a platform to share my journey through the world of web
+          development. I've created it with the goal of documenting my progress, displaying my skills, and offering
+          insights into my experiences as a web developer. Whether you're an aspiring developer, a potential
+          collaborator, or someone who appreciates the art of web development, this showcase offers a glimpse into my
+          dedication to creating exceptional online experiences.</p>
+        <a href="#MyWork" class="btn btn-primary btn-lg">Explore My Creations</a>
+      </div>
+
+      <div class="col">
+        <div class="row row-cols-1 row-cols-sm-2 g-4">
+          <div class="col d-flex flex-column gap-2">
+            <div
+              class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+              <svg class="bi" width="1em" height="1em">
+                <use xlink:href="#collection"></use>
+              </svg>
+            </div>
+            <h4 class="fw-semibold mb-0 text-body-emphasis">Showcasing My Work</h4>
+            <p class="text-body-secondary">Browse through a collection of web development assignments and projects.</p>
+          </div>
+
+          <div class="col d-flex flex-column gap-2">
+            <div
+              class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+              <svg class="bi" width="1em" height="1em">
+                <use xlink:href="#gear-fill"></use>
+              </svg>
+            </div>
+            <h4 class="fw-semibold mb-0 text-body-emphasis">Learning and Growth</h4>
+            <p class="text-body-secondary">Witness my journey of continuous learning and growth in web development.</p>
+          </div>
+
+          <div class="col d-flex flex-column gap-2">
+            <div
+              class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+              <svg class="bi" width="1em" height="1em">
+                <use xlink:href="#speedometer"></use>
+              </svg>
+            </div>
+            <h4 class="fw-semibold mb-0 text-body-emphasis">Creative Insights</h4>
+            <p class="text-body-secondary">Gain insights into the creative process behind each assignment and project.
+            </p>
+          </div>
+
+          <div class="col d-flex flex-column gap-2">
+            <div
+              class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+              <svg class="bi" width="1em" height="1em">
+                <use xlink:href="#table"></use>
+              </svg>
+            </div>
+            <h4 class="fw-semibold mb-0 text-body-emphasis">Community Engagement</h4>
+            <p class="text-body-secondary">Connect with a community of web development enthusiasts and learners.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Me Section -->
+  <div id="AboutMe" class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="col-lg-6 px-0">
+        <h1 class="display-4">Getting to Know More About Me</h1>
+        <p class="lead my-3 fs-5">I'm <code class="fs-4">Subaiyal Rehan</code>, a passionate web developer on a mission
+          to bring creative digital
+          ideas to life. With a keen eye for design and a love for coding, I'm dedicated to crafting engaging web
+          experiences that seamlessly blend aesthetics with functionality.</p>
+        <a class="btn btn-info btn-lg" href="#" role="button">Let's connect and make web magic!</a>
+      </div>
+      <div>
+        <img width="500" src="Images/About.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-center">
+    <div class="container-fluid row mb-2">
+      <div class="col-md-6">
+        <div
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative about-cards">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h3 class="mb-2">My Web Development Expertise</h3>
+            <p class="card-text mb-auto">I specialize in various web development technologies, including HTML, CSS, and
+              JavaScript. These languages form the foundation of my work, enabling me to create dynamic and
+              user-friendly web solutions. My interests also extend to responsive web design, user experience
+              optimization, and staying up-to-date with the latest industry trends. I'm committed to refining my skills
+              and staying at the forefront of web development innovation.</p>
+          </div>
+          <div class="col-auto py-4 px-2 d-none d-lg-block d-flex align-items-center">
+            <img width="210" src="Images/Html-Css.png">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative about-cards">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h3 class="mb-2">My Vision for the Future</h3>
+            <p class="mb-auto">I am excited about the endless possibilities in web development. Looking ahead, I aspire
+              to further refine my proficiency in front-end and back-end development, explore emerging technologies, and
+              contribute to meaningful digital projects. My ultimate goal is to make a positive impact through
+              technology, whether it's by creating captivating user experiences, collaborating on innovative web
+              applications, or mentoring the next generation of web developers.</p>
+          </div>
+          <div class="col-auto py-3 px-2 d-none d-lg-block">
+            <img width="250" src="Images/Future.png">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static text-center">
+            <h3 class="mb-2">Coding and Cubes: A Glimpse into My World</h3>
+            <p class="mb-auto">When I'm not deep in code, I'm diving into another kind of puzzle: Rubik's cubes. I've
+              got a knack for solving those colorful brain-teasers in record time, and I won't deny that my coding
+              mindset sometimes sees algorithms in those twisting patterns. 'Rubik's Cubing' isn't just a hobby; it's a
+              way to keep my problem-solving skills sharp and my fingers agile. You could say I've got a love for both
+              code and cubes, and I'm excited to take you along for the ride. Welcome to my world of coding, where we
+              explore the digital realm together!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- My Work Section -->
+  <section id="MyWork">
+    <div class="my-5 border-bottom border-top">
+      <div class="p-5 text-center bg-body-tertiary">
+        <div class="container py-5">
+          <h1 class="text-body-emphasis">Explore My Web Development Portfolio</h1>
+          <p class="col-lg-8 mx-auto lead">
+            Step into my web development world, where digital creations come to life. This is the space where my
+            assignments, projects, and web wonders reside, a testament to my passion for coding excellence. Whether
+            you're here to learn, draw inspiration, or simply appreciate the art of web development, your journey begins
+            right here.
+          </p>
+          <a href="#"><button type="button" class="btn btn-lg btn-outline-success">Dive into My Creations</button></a>
+          <a href="#My-Assignments"><button type="button" class="btn btn-lg btn-outline-danger">Delve into My
+              Assignments</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Assignments Section -->
+  <section id="My-Assignments">
+    <div class="container my-5">
+      <div class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5">
+        <h1 class="text-body-emphasis">Dive into My Web Development Assignments</h1>
+        <p class="col-lg-8 mx-auto mb-4">
+          Here, I present a collection of my personal web development assignments in HTML, CSS, and JavaScript. These
+          projects are a testament to my journey in coding and reflect my commitment to mastering the art of web
+          development. Dive into each assignment to see how I've tackled various challenges and crafted digital
+          solutions.
+        </p>
+        <a href="#HTML-Assignments"><button class="btn btn-primary px-5 py-2 rounded-1 mx-1" type="button">HTML
+            Assignments</button></a>
+        <a href="#CSS-Assignments"><button class="btn btn-primary px-5 py-2 rounded-1 mx-1" type="button">CSS
+            Assignments</button></a>
+        <a href="#JavaScript-Assignments"><button class="btn btn-primary px-5 py-2 rounded-1 mx-1"
+            type="button">JavaScript Assignments</button></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HTML Assignments -->
+  <section id="HTML-Assignments">
+    <div class="text-center mb-3 container">
+      <h2 class="container fs-1 w-50 pb-2 border-bottom">HTML Assignments Showcase</h2>
+      <p class="text-muted">Welcome to the HTML Assignments Showcase, where you'll find a collection of HTML assignments
+        I've completed. Dive into the world of HTML and explore the projects I've crafted, each designed to enhance my
+        web development skills and creativity. Feel free to click on any assignment to view its details and see the
+        magic of HTML in action.</p>
+    </div>
+
+    </div>
+    <div class="card-group col-8 m-auto">
+      <!-- Card 1 -->
+      <div class="Made-Cards card mx-3 border rounded">
+        <img src="Images/Assignments Pic/Pic1.png" class="card-img-top border">
+        <div class="card-body">
+          <h5 class="card-title">Assignment 1 (Part 1)</h5>
+          <p class="card-text">This assignment showcases a professionally styled customer service cover letter example,
+            highlighting HTML skills in creating a well-structured job application document.</p>
+        </div>
+        <div class="card-footer p-0">
+          <a href="HTML/Assignment 01/CoverLetter.html">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary rounded-0" type="button">View Assignment 1 a</button>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="Made-Cards card mx-3 border rounded">
+        <img src="Images/Assignments Pic/Pic2.png" class="card-img-top border">
+        <div class="card-body">
+          <h5 class="card-title">Assignment 1 (Part 2)</h5>
+          <p class="card-text">This assignment showcases a personal resume webpage that presents information about the
+            creator, including their objective, educational background, experience, and awards. It primarily focuses on
+            HTML to create a well-structured and visually appealing online resume.</p>
+        </div>
+        <div class="card-footer p-0">
+          <a href="HTML/Assignment 01/Resume.html">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary rounded-0" type="button">View Assignment 1 b</button>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="Made-Cards card mx-3 border rounded">
+        <img src="Images/Assignments Pic/Pic3.png" class="card-img-top border">
+        <div class="card-body">
+          <h5 class="card-title">Assignment 2</h5>
+          <p class="card-text">This assignment showcases a web page that provides a navigational structure for various
+            pages and articles. It features links to 'About,' 'Services,' 'Contact Us,' and articles about animals,
+            plants, and trees. The design incorporates clean styling with a focus on page organization and readability.
+          </p>
+        </div>
+        <div class="card-footer p-0">
+          <a href="HTML/Assignment 02/index.html">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary rounded-0" type="button">View Assignment 2</button>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-group col-8 m-auto my-4">
+      <!-- Card 4 -->
+      <div class="Made-Cards card mx-3 border rounded">
+        <img src="Images/Assignments Pic/Pic4.png" class="card-img-top border">
+        <div class="card-body">
+          <h5 class="card-title">Assignment 3</h5>
+          <p class="card-text">This assignment showcases a two-part web project. The first part, 'Students Data,'
+            displays student information in a structured table format. The second part, 'Student Form Page,' provides a
+            form for adding new student data. Both parts feature clean and organized designs, making it easy to view and
+            input student details.</p>
+        </div>
+        <div class="card-footer p-0">
+          <a href="HTML/Assignment 03/StudentData.html">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary rounded-0" type="button">View Assignment 3</button>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="Made-Cards card mx-3 border rounded">
+        <img src="Images/Assignments Pic/Pic5.png" class="card-img-top border">
+        <div class="card-body">
+          <h5 class="card-title">Assignment 4</h5>
+          <p class="card-text">Explore the fascinating world of chemistry with the Periodic Table in this Assignment.
+            This interactive table showcases the elements in a visually appealing way, providing key information at a
+            glance. Discover the beauty and organization of the elements with this HTML creation.</p>
+        </div>
+        <div class="card-footer p-0">
+          <a href="HTML/Assignment 04/index.html">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary rounded-0" type="button">View Assignment 4</button>
+            </div>
+          </a>
+        </div>
+      </div>
+  </section>
+
+  <!-- CSS Assignments -->
+  <section id="CSS-Assignments" class="my-5">
+    <div class="text-center mb-3 container">
+      <h2 class="container fs-1 w-50 pb-2 border-bottom">CSS Assignments Showcase</h2>
+      <p class="text-muted">Welcome to the CSS assignments! In this section, we embark on a journey to master Cascading
+        Style Sheets, a fundamental web technology for controlling the look and feel of web pages. It's important to
+        note that these Assignments are entirely hand-coded, without the use of any libraries or frameworks. Get ready
+        to explore the art of web design and layout as we delve into the world of CSS in our assignments.</p>
+    </div>
+    <div class="card-group col-8 m-auto">
+      <!-- Card 1 -->
+      <div class="Made-Cards card mx-3 border rounded">
+        <img src="Images/Assignments Pic/Pic6.png" class="card-img-top border">
+        <div class="card-body">
+          <h5 class="card-title">Assignment 5</h5>
+          <p class="card-text">In this CSS assignment, I've crafted a professional portfolio. Using CSS, I've styled the
+            site's elements, including the navigation menu, header, skills section, and project showcases. This
+            assignment showcases my CSS skills in creating a polished and functional web layout. However, please keep in
+            mind that this assignment is not optimized for responsiveness.</p>
+        </div>
+        <div class="card-footer p-0">
+          <a href="CSS/Assignment 05/index.html">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary rounded-0" type="button">View Assignment 5</button>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="Made-Cards card mx-3 border rounded">
+        <img src="Images/Assignments Pic/Pic7.png" class="card-img-top border">
+        <div class="card-body">
+          <h5 class="card-title">Assignment 6</h5>
+          <p class="card-text">This assignment is a replica of the official <a class="link-secondary"
+              href="https://www.apple.com">Apple</a> website. The page includes a header with navigation, sections
+            highlighting Apple products, and a footer with additional information and links. It aims to provide details
+            about Apple products and encourage user engagement. However, please keep in mind that this assignment is not
+            optimized for responsiveness.</p>
+        </div>
+        <div class="card-footer p-0">
+          <a href="CSS/Assignment 06/index.html">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary rounded-0" type="button">View Assignment 6</button>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="Made-Cards card mx-3 border rounded">
+        <img src="Images/Assignments Pic/Pic8.png" class="card-img-top border">
+        <div class="card-body">
+          <h5 class="card-title">Assignment 7</h5>
+          <p class="card-text">This assignment involves replicating the official <a class="link-secondary"
+              href="https://www.samsung.com">Samsung</a> website using HTML and CSS. This project is an opportunity to
+            display my proficiency in creating visually appealing web pages. However, please keep in mind that this
+            assignment is not optimized for responsiveness.</p>
+        </div>
+        <div class="card-footer p-0">
+          <a href="CSS/Assignment 07/public/index.html">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary rounded-0" type="button">View Assignment 7</button>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-group col-8 m-auto my-4">
+      <!-- Card 4 -->
+      <div class="Made-Cards card mx-3 border rounded">
+        <img src="Images/Assignments Pic/Pic8.png" class="card-img-top border">
+        <div class="card-body">
+          <h5 class="card-title">Assignment 8</h5>
+          <p class="card-text">This assignment focuses on meticulously crafting a web page that mirrors the appearance
+            and structure of a <a class="link-secondary" href="https://www.facebook.com">Facebook</a> profile. Using
+            HTML and CSS, this project aims to replicate the design elements and features of the original Facebook
+            profile.. However, please keep in mind that this assignment is not optimized for responsiveness.</p>
+        </div>
+        <div class="card-footer p-0">
+          <a href="CSS/Assignment 08/public/index.html">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary rounded-0" type="button">View Assignment 8</button>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <!-- <div class="Made-Cards card mx-3 border rounded">
+        <img src="Images/Assignments Pic/Pic9.png" class="card-img-top border">
+        <div class="card-body">
+          <h5 class="card-title">Assignment 9</h5>
+          <p class="card-text">Explore the fascinating world of chemistry with the Periodic Table in this Assignment. This interactive table showcases the elements in a visually appealing way, providing key information at a glance. Discover the beauty and organization of the elements with this HTML creation.</p>
+        </div>
+        <div class="card-footer p-0">
+          <a href="CSS/Assignment 09/public/index.html">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary rounded-0" type="button">View Assignment 9</button>
+            </div>
+          </a>
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- JavaScript Assignments -->
+  <section id="JavaScript-Assignments" class="my-5">
+    <div class="text-center mb-3 container">
+      <h2 class="container fs-1 w-75 pb-2 border-bottom">JavaScript Assignments Showcase</h2>
+      <p class="text-muted">The journey into JavaScript Assignments has officially kicked off. Brace yourself for a
+        series of captivating coding tasks and projects that will expand your JavaScript prowess. It's time to dive into
+        the world of dynamic web development and refine your programming skills. Get set for an engaging and rewarding
+        experience!</p>
+    </div>
+    <div class="m5-5 pt-5">
+      <hr class="border border-primary border-3 opacity-75">
+      <div class="m-auto w-75">
+        <p class="text-center text-muted fs-5 ">Hey there, I appreciate your interest! As of now, I haven't had any
+          JavaScript
+          assignments
+          to work on, but I'm looking forward to taking on exciting projects in the future. Stay tuned for updates!</p>
+      </div>
+      <hr class="border border-primary border-3 opacity-75">
+    </div>
+    <!-- <div class="card-group col-8 m-auto"> -->
+    <!-- Card 1 -->
+    <!-- <div class="Made-Cards card mx-3 border rounded">
+        <img src="Images/Assignments Pic/Pic6.png" class="card-img-top border">
+        <div class="card-body">
+          <h5 class="card-title">Assignment 5</h5>
+          <p class="card-text">In this CSS assignment, I've crafted a professional portfolio. Using CSS, I've styled the site's elements, including the navigation menu, header, skills section, and project showcases. This assignment showcases my CSS skills in creating a polished and functional web layout. However, please keep in mind that this assignment is not optimized for responsiveness.</p>
+        </div>
+        <div class="card-footer p-0">
+          <a href="CSS/Assignment 05/index.html">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary rounded-0" type="button">View Assignment 5</button>
+            </div>
+          </a>
+        </div>
+      </div> -->
+    <!-- Card 2 -->
+    <!-- <div class="Made-Cards card mx-3 border rounded">
+        <img src="Images/Assignments Pic/Pic7.png" class="card-img-top border">
+        <div class="card-body">
+          <h5 class="card-title">Assignment 6</h5>
+          <p class="card-text">This assignment is a replica of the official <a class="link-secondary" href="https://www.apple.com">Apple</a> website. The page includes a header with navigation, sections highlighting Apple products, and a footer with additional information and links. It aims to provide details about Apple products and encourage user engagement. However, please keep in mind that this assignment is not optimized for responsiveness.</p>
+        </div>
+        <div class="card-footer p-0">
+          <a href="CSS/Assignment 06/index.html">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary rounded-0" type="button">View Assignment 6</button>
+            </div>
+          </a>
+        </div>
+      </div> -->
+    <!-- Card 3 -->
+    <!-- <div class="Made-Cards card mx-3 border rounded">
+        <img src="Images/Assignments Pic/Pic8.png" class="card-img-top border">
+        <div class="card-body">
+          <h5 class="card-title">Assignment 7</h5>
+          <p class="card-text">This assignment involves replicating the official <a class="link-secondary" href="https://www.samsung.com">Samsung</a> website using HTML and CSS. This project is an opportunity to display my proficiency in creating visually appealing web pages. However, please keep in mind that this assignment is not optimized for responsiveness.</p>
+        </div>
+        <div class="card-footer p-0">
+          <a href="CSS/Assignment 07/public/index.html">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary rounded-0" type="button">View Assignment 7</button>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <div class="card-group col-8 m-auto my-4"> -->
+    <!-- Card 4 -->
+    <!-- <div class="Made-Cards card mx-3 border rounded">
+        <img src="Images/Assignments Pic/Pic8.png" class="card-img-top border">
+        <div class="card-body">
+          <h5 class="card-title">Assignment 8</h5>
+          <p class="card-text">This assignment focuses on meticulously crafting a web page that mirrors the appearance and structure of a <a class="link-secondary" href="https://www.facebook.com">Facebook</a> profile. Using HTML and CSS, this project aims to replicate the design elements and features of the original Facebook profile.. However, please keep in mind that this assignment is not optimized for responsiveness.</p>
+        </div>
+        <div class="card-footer p-0">
+          <a href="CSS/Assignment 08/public/index.html">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary rounded-0" type="button">View Assignment 8</button>
+            </div>
+          </a>
+        </div>
+      </div> -->
+    <!-- Card 5 -->
+    <!-- <div class="Made-Cards card mx-3 border rounded">
+        <img src="Images/Assignments Pic/Pic9.png" class="card-img-top border">
+        <div class="card-body">
+          <h5 class="card-title">Assignment 9</h5>
+          <p class="card-text">Explore the fascinating world of chemistry with the Periodic Table in this Assignment. This interactive table showcases the elements in a visually appealing way, providing key information at a glance. Discover the beauty and organization of the elements with this HTML creation.</p>
+        </div>
+        <div class="card-footer p-0">
+          <a href="CSS/Assignment 09/public/index.html">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary rounded-0" type="button">View Assignment 9</button>
+            </div>
+          </a>
+        </div>
+      </div> -->
+    <!-- </div> -->
+  </section>
+
+  <!-- My Projects Section -->
+  <section id="My-Projects">
+    <div class="container my-5">
+      <div class="position-relative p-5 pb-4 text-center text-muted bg-body border border-dashed rounded-5">
+        <h1 class="text-body-emphasis">Dive into My Web Development Projects</h1>
+        <p class="col-lg-8 mx-auto">
+          Welcome to my projects section, where I showcase a compilation of my personal web development endeavors
+          created using HTML, CSS, and JavaScript. These projects embody my continuous learning and dedication to the
+          world of web development. Dive into each one to witness how I've taken on unique challenges and crafted
+          digital solutions along the way.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="card-group col-8 m-auto">
+      <!-- Card 1 -->
+      <div class="Made-Cards card mx-3 border rounded">
+        <img src="Images/Project1.png" class="card-img-top border">
+        <div class="card-body">
+          <h5 class="card-title">World Clock (Project 1)</h5>
+          <p class="card-text">Explore 'WorldClock' - Your Global Time Zone Reference! 'WorldClock' simplifies tracking time zones worldwide. Stay synchronized with international events, connect with friends and family, and enhance your global awareness. It's your ultimate timekeeping tool!</p>
+        </div>
+        <div class="card-footer p-0">
+          <a href="https://subaiyal-rehan.github.io/worldclock">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary rounded-0" type="button">View Project 1</button>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="Made-Cards card mx-3 border rounded">
+        <img src="Images/Project2.png" class="card-img-top border">
+        <div class="card-body">
+          <h5 class="card-title">Freeze (Project 2)</h5>
+          <p class="card-text">Introducing <q>Freeze</q> - Your Single-Page Ice Cream Heaven! 'Freeze' is your ultimate destination for ice cream delights, all on a single, user-friendly page. Explore a variety of classic and unique flavors, daily specials, and place orders with ease. Your scoop of happiness is just a click away. Start your ice cream adventure now!</p>
+        </div>
+        <div class="card-footer p-0">
+          <a href="https://subaiyal-rehan.github.io/Freeze">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary rounded-0" type="button">View Project 2</button>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="Made-Cards card mx-3 border rounded">
+        <img src="Images/Project3.png" class="card-img-top border">
+        <div class="card-body">
+          <h5 class="card-title">GyMaX (Project 3)</h5>
+          <p class="card-text">Welcome to 'GyMaX' - Your Single-Page Fitness Hub! Experience 'GyMaX,' your go-to fitness website. Discover workouts, training plans, and nutrition tips on one easy-to-navigate page. Start your fitness journey now! 
+          </p>
+        </div>
+        <div class="card-footer p-0">
+          <a href="https://subaiyal-rehan.github.io/GyMaX">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary rounded-0" type="button">View Project 3</button>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-group col-8 m-auto my-4">
+      <!-- Card 4 -->
+      <div class="Made-Cards card mx-3 border rounded">
+        <img src="Images/Project4.png" class="card-img-top border">
+        <div class="card-body">
+          <h5 class="card-title">Shop Shop (Project 4)</h5>
+          <p class="card-text">Welcome to 'Shop Shop' - Your Single-Page Shopping Paradise! 'Shop Shop' is your go-to destination for a delightful shopping experience, offering a diverse range of products, all conveniently presented on a single page. 'Shop Shop' has something for everyone. Find your favorite items and shop with ease!</p>
+        </div>
+        <div class="card-footer p-0">
+          <a href="https://subaiyal-rehan.github.io/Shop-Shop/">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary rounded-0" type="button">View Project 4</button>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="Made-Cards card mx-3 border rounded">
+        <img src="Images/Project5.png" class="card-img-top border">
+        <div class="card-body">
+          <h5 class="card-title">Assignment 4</h5>
+          <p class="card-text">Savor America's Finest at 'American Food' - Your One-Page Culinary Getaway! 'American Food' - your passport to the delicious flavors of America. Enjoy iconic dishes, from burgers to pizzas, all on a single, tantalizing page. Please note that it's a tasty adventure designed for non-responsive screens. Treat your taste buds today!</p>
+        </div>
+        <div class="card-footer p-0">
+          <a href="https://subaiyal-rehan.github.io/American-Food/">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary rounded-0" type="button">View Assignment 4</button>
+            </div>
+          </a>
+        </div>
+      </div>
+  </section>
+  <h1 class="text-center">Add Footer <br> Check responsiveness</h1>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
