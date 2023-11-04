@@ -1,0 +1,507 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+/* Utility Classes */
+.max-w {
+    max-width: 1298px;
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justfiy-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* Normal CSS */
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.BG-CLR {
+    padding: 18px 0;
+    background-color: #f7f8f8;
+}
+
+.navbar1 {
+    gap: 36px;
+}
+
+.firstLinks a {
+    color: black;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.firstLinks a span {
+    padding: 7px;
+    border-radius: 50%;
+    font-size: 17px;
+    background-image: linear-gradient(rgb(229, 229, 229), white, white);
+}
+
+.firstLinks a:hover {
+    color: rgb(40, 40, 255);
+}
+
+.navbar2 {
+    padding: 27px 0 0px;
+    justify-content: space-between;
+}
+
+.Navbar2Input {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border: 2px solid #002f34;
+    border-radius: 5px;
+    height: 45px;
+    width: 250px;
+    padding: 0 8px;
+    gap: 5px;
+    font-size: 13px;
+}
+
+.Navbar2Input2 {
+    padding: 0 0 0 5px;
+    width: 700px;
+}
+
+.Navbar2Input input {
+    color: rgb(47, 47, 47);
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    padding: 0 5px;
+}
+
+.Navbar2Input2 input::placeholder {
+    color: black;
+}
+
+.Navbar2Input2 i {
+    background-color: #002f34;
+    font-size: 22px;
+    height: 100%;
+    width: 50px;
+    color: white;
+}
+
+.Nav2FlexItem3 {
+    display: flex;
+    align-items: center;
+}
+
+.Nav2FlexItem3 a:first-child {
+    font-size: 17px;
+    font-weight: bold;
+    color: #002f34;
+    margin-right: 17px;
+}
+
+.Nav2FlexItem3 a:first-child:hover {
+    text-decoration: none;
+}
+
+.Nav2FlexItem3 a button {
+    border-top: 5px solid #23e5db;
+    border-left: 5px solid rgb(233, 233, 0);
+    border-right: 5px solid #3a77ff;
+    border-bottom: 5px solid #3a77ff;
+    border-radius: 25px;
+    padding: 7px 17px;
+    background-color: white;
+    font-size: 17px;
+    font-weight: bold;
+    color: #002f34;
+    cursor: pointer;
+}
+
+.navbarOut {
+    background-color: white;
+    box-shadow: 0px 2px 5px -2px rgba(74, 74, 74, 0.51);
+    padding: 10px 0;
+}
+
+.navbar3 {
+    gap: 30px;
+}
+
+.navbar3In2 {
+    gap: 15px;
+}
+
+.navbar3In1 {
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.navbar3In1 span {
+    font-size: 25px;
+    margin-left: 5px;
+}
+
+.navbar3In2 a {
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.navbar3In2 a:hover {
+    color: rgb(0, 161, 161);
+}
+
+.BannerSection {
+    margin-top: 25px;
+}
+
+.bannerImages {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.bannerImages img {
+    width: 1400px;
+    height: 183px;
+    cursor: pointer;
+    position: relative;
+    animation: slider 2.5s ease-in-out 2s infinite;
+}
+
+@keyframes slider {
+    0% {
+        right: 0;
+    }
+
+    50% {
+        right: 1300px;
+    }
+
+    100% {
+        right: 1300px;
+    }
+}
+
+.CategoriesSection {
+    margin-top: 40px;
+}
+
+.CategoriesFlex {
+    flex-wrap: wrap;
+    row-gap: 22px;
+    column-gap: 47px;
+    margin: 25px 0 0 14px;
+
+}
+
+.CategoriesContent>h2 {
+    font-size: 23px;
+}
+
+.CategoriesFlexItem {
+    width: 100px;
+}
+
+.CategoriesFlexItem a {
+    text-decoration: none;
+    color: black;
+}
+
+.CategoriesFlexItem h3 {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.CardsSection {
+    margin-top: 40px;
+}
+
+.CardsOuterHeading h2 {
+    font-size: 24px;
+}
+
+.CardsOuterHeading a {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(58, 119, 255);
+    text-decoration: none;
+}
+
+.CardsOuterHeading {
+    justify-content: space-between;
+}
+
+.CardsContainer {
+    margin-top: 25px;
+    justify-content: space-between;
+}
+
+.Card {
+    width: 23%;
+    border: 1px solid rgb(213, 213, 213);
+    border-radius: 5px;
+    cursor: pointer;
+    height: 320px;
+}
+
+.JobCard {
+    height: 284px;
+}
+
+.Card:active {
+    cursor: not-allowed;
+}
+
+.CardImage {
+    overflow: hidden;
+    height: 160px;
+}
+
+.CardText {
+    padding: 13px;
+    flex-direction: column;
+    height: 134px;
+    justify-content: space-between;
+}
+
+.JobCard .CardText {
+    height: 97px;
+}
+
+.CardPrice {
+    justify-content: space-between;
+}
+
+.CardPrice i {
+    font-size: 21px;
+}
+
+.CardProductName p {
+    color: rgb(0, 47, 52);
+    font-size: 16px;
+}
+
+.JobCard .CardProductName {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.JobCard .CardProductName p {
+    width: 85%;
+}
+
+.JobCard .CardProductName i {
+    font-size: 21px;
+}
+
+.CardLocation {
+    color: rgb(64, 99, 103);
+    font-size: 12px;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.CardLocation span:nth-child(2) {
+    font-size: 14px;
+}
+
+.CardsCarLocation span:first-child {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.CardsCarLocation span svg {
+    width: 12px;
+    margin-left: 6px;
+}
+
+.TryOlxSection {
+    height: 200px;
+    background-color: rgba(0, 47, 52, .03);
+    margin-top: 85px;
+}
+
+.TryOlxFlexItem {
+    height: 100%;
+    width: 500px;
+}
+
+.TryOlxFlexItem2 {
+    padding: 5px 4px;
+    font-size: 20px;
+    border-right: 2px solid rgb(166, 166, 166, 0.5);
+}
+
+.TryOlxFlexItem2 h2 {
+    margin-bottom: 27px;
+    font-size: 32px;
+}
+
+.TryOlxFlexItem2 p {
+    margin-right: 15px;
+    width: 400px;
+}
+
+.TryOlxFlexItem3 {
+    padding: 20px 40px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.TryOlxFlexItem3>h3 {
+    padding-left: 3px;
+}
+
+.TryOlxImages img:nth-child(3) {
+    margin-left: 3px;
+}
+
+.FooterLinksSection {
+    border-top: 1px solid rgba(0, 47, 52, .2);
+    background-color: #ebeeef;
+    padding: 16px 0 64px;
+}
+
+.FooterLinksContent {
+    justify-content: space-between;
+}
+
+.FooterLinksFlexItem {
+    width: 200px;
+}
+
+.FooterLinksFlexItem h3 {
+    font-size: 15px;
+    margin-bottom: 11px;
+}
+
+.FooterLinksFlexItem ul {
+    list-style: none;
+}
+
+.FooterLinksFlexItem ul li {
+    margin: 3px 0;
+}
+
+.FooterLinksFlexItem ul li a {
+    text-decoration: none;
+    color: rgba(0, 47, 52, 0.64);
+    font-size: 12px;
+}
+
+.FooterLinksFlexItem ul li a:hover {
+    color: #000000;
+}
+
+.FooterLinksFlexItem5 {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.FooterLinksFlexItem5 {
+    width: 295px;
+}
+
+.FooterFlexItem3_1 i {
+    font-size: 11px;
+    color: #557477;
+    padding: 3px;
+    position: relative;
+    bottom: 5px;
+    margin-right: 10px;
+    border: 2px solid #557477;
+    border-radius: 50%;
+}
+
+.FooterCopyrightSection {
+    background-color: #002f34;
+}
+
+.FooterCopyrightContent {
+    text-align: end;
+    font-size: 12px;
+    padding: 18px 0;
+    color: white;
+}
+
+.FooterCopyrightContent span {
+    font-weight: bolder;
+    margin-right: 7px;
+}
+
+@media screen and (max-width: 1300px) {
+    .max-w {
+        max-width: 1020px;
+    }
+
+    .Navbar2Input2 {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 1015px) {
+    .Navbar2Input2 {
+        width: 214px;
+    }
+}
+
+
+@media screen and (max-width: 711px) {
+    .Navbar2Input2 {
+        width: 114px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .CategoriesFlexItem {
+        width: 68px;
+        text-align: center;
+    }
+
+    .CategoriesFlexItem h3 {
+        font-size: 12px;
+    }
+
+    .CategoriesFlexItem img {
+        width: 48px;
+    }
+
+    .CategoriesFlex {
+        row-gap: 16px;
+        column-gap: 37px;
+    }
+
+    .CardPrice h3 {
+        font-size: 15px;
+    }
+
+    .CardPrice i {
+        font-size: 16px;
+    }
+
+    .CardProductName p {
+        font-size: 14px;
+    }
+
+    .TryOlxFlexItem2 {
+        display: none;
+    }
+}
