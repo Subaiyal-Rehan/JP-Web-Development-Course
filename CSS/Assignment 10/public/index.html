@@ -9,13 +9,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="For-Hero-BG">
         <div class="For-Less-Opacity">
-            <header class="">
+            <header>
                 <nav class="navbar navbar-dark bg-transparent py-4">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#"><img width="80" class="ms-4" src="Images/Logo.webp"></a>
@@ -28,8 +31,8 @@
                                 <span class="Header-Hamburger position-fixed navbar-toggler-icon"></span>
                             </span>
                         </button>
-                        <div class="offcanvas offcanvas-end text-bg-dark bg-black pt-4 ps-3" tabindex="-1"
-                            id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="Navigation-Menu offcanvas offcanvas-end text-bg-dark bg-black pt-4 ps-3"
+                            tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
                             <div class="offcanvas-header">
                                 <h5 class="text-green offcanvas-title fs-7 Navigation letter-space-3"
                                     id="offcanvasDarkNavbarLabel">
@@ -43,19 +46,19 @@
                                         <a class="nav-link active fs-5" aria-current="page" href="#">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link active fs-5" href="#">About</a>
+                                        <a class="nav-link active fs-5" href="#About-Section">About</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link active fs-5" href="#">Services</a>
+                                        <a class="nav-link active fs-5" href="#Services-Section">Services</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link active fs-5" href="#">Works</a>
+                                        <a class="nav-link active fs-5" href="#Works-Section">Works</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link active fs-5" href="#">Clients</a>
+                                        <a class="nav-link active fs-5" href="#Our-Clients-Section">Clients</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link active fs-5" href="#">Contact</a>
+                                        <a class="nav-link active fs-5" href="#Contact-Section">Contact</a>
                                     </li>
                                 </ul>
                                 <p class="text-muted py-5 fs-6">Perspiciatis hic praesentium nesciunt. Et neque a
@@ -84,14 +87,14 @@
                             <h1 class="Hero-H1 text-light fw-bolder display-3">We are a creative group of people who
                                 design influential brands and digital experiences.</h1>
                             <div class="Hero-Buttons ms-2">
-                                <a href="#">
+                                <a href="#Contact-Section">
                                     <button type="button"
                                         class="btn btn-outline-light text-uppercase rounded-0 fw-bolder">Start a
                                         Project</button>
                                 </a>
-                                <a href="#">
+                                <a href="#About-Section">
                                     <button type="button"
-                                        class="btn btn-outline-light text-uppercase rounded-0 fw-bolder ms-3">More About
+                                        class="btn btn-outline-light text-uppercase rounded-0 fw-bolder">More About
                                         Us</button>
                                 </a>
                             </div>
@@ -137,7 +140,7 @@
                         </div>
                     </div>
                     <div class="Hero-Scroll position-absolute d-flex align-items-start gap-3">
-                        <a href="#" class="text-decoration-none text-light">
+                        <a href="#About-Section" class="text-decoration-none text-light">
                             <i class="bi bi-chevron-down text-green"></i>
                             <span class="text-uppercase fs-7 letter-space-3 fw-bolder">Scroll down</span>
                         </a>
@@ -148,7 +151,7 @@
         </div>
     </div>
     <main>
-        <section class="AboutSection">
+        <section id="About-Section" class="AboutSection">
             <div class="container">
                 <div class="box box1 text-center m-auto">
                     <h3 class="text-uppercase text-dark fs-6 fw-bolder letter-space-3 mb-0">Hello there</h3>
@@ -161,29 +164,29 @@
                         in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                         cupidatat non proident, sunt in culpa qui officia deserunt.</p>
                 </div>
-                <div class="box box3 text-center d-flex justify-content-center m-auto">
-                    <div class="inBox3 inBox3-1">
-                        <span class="text-light fw-bolder">127</span>
-                        <h5 class="fs-6 fw-bolder">Awards Recieved</h5>
-                    </div>
-                    <div class="inBox3 inBox3-2">
-                        <span class="text-light fw-bolder">1505</span>
-                        <h5 class="fs-6 fw-bolder">Cups of Coffee</h5>
-                    </div>
-                    <div class="inBox3 inBox3-3">
-                        <span class="text-light fw-bolder">109</span>
-                        <h5 class="fs-6 fw-bolder">Projects Completed</h5>
-                    </div>
-                    <div class="inBox3 inBox3-4">
-                        <span class="text-light fw-bolder">102</span>
-                        <h5 class="fs-6 fw-bolder">Happy Clients</h5>
-                    </div>
+            </div>
+            <div class="box box3 text-center row m-auto">
+                <div class="col-md-3 inBox3 inBox3-1 text-center">
+                    <span class="text-light fw-bolder">127</span>
+                    <h5 class="fs-6 fw-bolder">Awards Recieved</h5>
+                </div>
+                <div class="col-md-3 inBox3 inBox3-2 text-center">
+                    <span class="text-light fw-bolder">1505</span>
+                    <h5 class="fs-6 fw-bolder">Cups of Coffee</h5>
+                </div>
+                <div class="col-md-3 inBox3 inBox3-3 text-center">
+                    <span class="text-light fw-bolder">109</span>
+                    <h5 class="fs-6 fw-bolder">Projects Completed</h5>
+                </div>
+                <div class="col-md-3 inBox3 inBox3-4 text-center">
+                    <span class="text-light fw-bolder">102</span>
+                    <h5 class="fs-6 fw-bolder">Happy Clients</h5>
                 </div>
             </div>
             <div class="AboutVerticalLine"></div>
         </section>
 
-        <section class="ServicesSection">
+        <section id="Services-Section" class="ServicesSection">
             <div class="container px-4 py-5" id="icon-grid">
                 <div class="box box1 Services-Box text-center m-auto">
                     <h3 class="text-uppercase text-green fs-6 fw-bolder letter-space-3 mb-0">What We Do</h3>
@@ -193,9 +196,12 @@
                 </div>
 
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-2 g-5 py-5 px-5">
-                    <div class="col d-flex align-items-start">
-                        <img class="bi text-body-secondary flex-shrink-0 me-4" src="Images/Services-1.png">
+                    <div class="Services-Grid-Container col-md-6 col-sm-12 d-flex align-items-start">
+                        <img class="Services-Image-Visible text-body-secondary flex-shrink-0 me-4"
+                            src="Images/Services-1.png">
                         <div class="Services-Grid">
+                            <img class="Services-Image-Hidden text-body-secondary flex-shrink-0 me-4"
+                                src="Images/Services-1.png">
                             <h3 class="fw-bold mb-0 fs-2 text-body-emphasis">Brand Identity</h3>
                             <p class="mt-3 text-muted fs-5">Nemo cupiditate ab quibusdam quaerat impedit magni. Earum
                                 suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut.
@@ -203,9 +209,12 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col d-flex align-items-start">
-                        <img class="bi text-body-secondary flex-shrink-0 me-4" src="Images/Services-2.png">
+                    <div class="Services-Grid-Container col-md-6 col-sm-12 d-flex align-items-start">
+                        <img class="Services-Image-Visible text-body-secondary flex-shrink-0 me-4"
+                            src="Images/Services-2.png">
                         <div class="Services-Grid">
+                            <img class="Services-Image-Hidden text-body-secondary flex-shrink-0 me-4"
+                                src="Images/Services-1.png">
                             <h3 class="fw-bold mb-0 fs-2 text-body-emphasis">Illustration</h3>
                             <p class="mt-3 text-muted fs-5">Nemo cupiditate ab quibusdam quaerat impedit magni. Earum
                                 suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut.
@@ -213,9 +222,12 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col d-flex align-items-start">
-                        <img class="bi text-body-secondary flex-shrink-0 me-4" src="Images/Services-3.png">
+                    <div class="Services-Grid-Container col-md-6 col-sm-12 d-flex align-items-start">
+                        <img class="Services-Image-Visible text-body-secondary flex-shrink-0 me-4"
+                            src="Images/Services-3.png">
                         <div class="Services-Grid">
+                            <img class="Services-Image-Hidden text-body-secondary flex-shrink-0 me-4"
+                                src="Images/Services-1.png">
                             <h3 class="fw-bold mb-0 fs-2 text-body-emphasis">Marketing</h3>
                             <p class="mt-3 text-muted fs-5">Nemo cupiditate ab quibusdam quaerat impedit magni. Earum
                                 suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut.
@@ -223,9 +235,12 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col d-flex align-items-start">
-                        <img class="bi text-body-secondary flex-shrink-0 me-4" src="Images/Services-4.png">
+                    <div class="Services-Grid-Container col-md-6 col-sm-12 d-flex align-items-start">
+                        <img class="Services-Image-Visible text-body-secondary flex-shrink-0 me-4"
+                            src="Images/Services-4.png">
                         <div class="Services-Grid">
+                            <img class="Services-Image-Hidden text-body-secondary flex-shrink-0 me-4"
+                                src="Images/Services-1.png">
                             <h3 class="fw-bold mb-0 fs-2 text-body-emphasis">Web Design</h3>
                             <p class="mt-3 text-muted fs-5">Nemo cupiditate ab quibusdam quaerat impedit magni. Earum
                                 suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut.
@@ -233,9 +248,12 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col d-flex align-items-start">
-                        <img class="bi text-body-secondary flex-shrink-0 me-4" src="Images/Services-5.png">
+                    <div class="Services-Grid-Container col-md-6 col-sm-12 d-flex align-items-start">
+                        <img class="Services-Image-Visible text-body-secondary flex-shrink-0 me-4"
+                            src="Images/Services-5.png">
                         <div class="Services-Grid">
+                            <img class="Services-Image-Hidden text-body-secondary flex-shrink-0 me-4"
+                                src="Images/Services-1.png">
                             <h3 class="fw-bold mb-0 fs-2 text-body-emphasis">Packaging Design</h3>
                             <p class="mt-3 text-muted fs-5">Nemo cupiditate ab quibusdam quaerat impedit magni. Earum
                                 suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut.
@@ -243,9 +261,12 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col d-flex align-items-start">
-                        <img class="bi text-body-secondary flex-shrink-0 me-4" src="Images/Services-6.png">
+                    <div class="Services-Grid-Container col-md-6 col-sm-12 d-flex align-items-start">
+                        <img class="Services-Image-Visible text-body-secondary flex-shrink-0 me-4"
+                            src="Images/Services-6.png">
                         <div class="Services-Grid">
+                            <img class="Services-Image-Hidden text-body-secondary flex-shrink-0 me-4"
+                                src="Images/Services-1.png">
                             <h3 class="fw-bold mb-0 fs-2 text-body-emphasis">Web Development</h3>
                             <p class="mt-3 text-muted fs-5">Nemo cupiditate ab quibusdam quaerat impedit magni. Earum
                                 suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut.
@@ -257,17 +278,18 @@
             </div>
         </section>
 
-        <section class="WorksSection">
+        <section id="Works-Section" class="WorksSection">
             <div class="Works-Text">
                 <div class="box box1 Services-Box text-center m-auto border-0">
                     <h3 class="text-uppercase text-green fs-6 fw-bolder letter-space-3 mb-0">Recent Works</h3>
-                    <h2 class="text-light display-4 fw-bolder mb-5">We love what we do, check out some of our latest works
+                    <h2 class="text-light display-4 fw-bolder mb-5">We love what we do, check out some of our latest
+                        works
                     </h2>
                 </div>
-                <div class="Works-Images position-relative d-flex m-auto">
+                <div class="Works-Images position-relative d-flex justify-content-center m-auto">
                     <div class="Workds-Image-Row">
                         <div class="Work-Image Work-Image1">
-                            <img src="Images/Work-Pic-1.png">
+                            <img class="img-fluid" src="Images/Work-Pic-1.png">
                             <div class="Work-Image-Shadow">
                                 <div class="Work-Image-Hover-1 position-absolute">
                                     <i class="Work-Image-Link bi bi-link-45deg border rounded-circle p-2 fs-4 ms-4"></i>
@@ -282,7 +304,7 @@
                             </div>
                         </div>
                         <div class="Work-Image Work-Image2">
-                            <img src="Images/Work-Pic-3.png">
+                            <img class="img-fluid" src="Images/Work-Pic-3.png">
                             <div class="Work-Image-Shadow">
                                 <div class="Work-Image-Hover-1 position-absolute">
                                     <i class="Work-Image-Link bi bi-link-45deg border rounded-circle p-2 fs-4 ms-4"></i>
@@ -297,7 +319,7 @@
                             </div>
                         </div>
                         <div class="Work-Image Work-Image3">
-                            <img src="Images/Work-Pic-5.png">
+                            <img class="img-fluid" src="Images/Work-Pic-5.png">
                             <div class="Work-Image-Shadow">
                                 <div class="Work-Image-Hover-1 position-absolute">
                                     <i class="Work-Image-Link bi bi-link-45deg border rounded-circle p-2 fs-4 ms-4"></i>
@@ -313,9 +335,9 @@
                         </div>
                     </div>
                     <div class="Workds-Image-Row">
-    
+
                         <div class="Work-Image Work-Image4">
-                            <img src="Images/Work-Pic-2.png">
+                            <img class="img-fluid" src="Images/Work-Pic-2.png">
                             <div class="Work-Image-Shadow">
                                 <div class="Work-Image-Hover-1 position-absolute">
                                     <i class="Work-Image-Link bi bi-link-45deg border rounded-circle p-2 fs-4 ms-4"></i>
@@ -330,7 +352,7 @@
                             </div>
                         </div>
                         <div class="Work-Image Work-Image5">
-                            <img src="Images/Work-Pic-4.png">
+                            <img class="img-fluid" src="Images/Work-Pic-4.png">
                             <div class="Work-Image-Shadow">
                                 <div class="Work-Image-Hover-1 position-absolute">
                                     <i class="Work-Image-Link bi bi-link-45deg border rounded-circle p-2 fs-4 ms-4"></i>
@@ -345,7 +367,7 @@
                             </div>
                         </div>
                         <div class="Work-Image Work-Image6">
-                            <img src="Images/Work-Pic-6.png">
+                            <img class="img-fluid" src="Images/Work-Pic-6.png">
                             <div class="Work-Image-Shadow">
                                 <div class="Work-Image-Hover-1 position-absolute">
                                     <i class="Work-Image-Link bi bi-link-45deg border rounded-circle p-2 fs-4 ms-4"></i>
@@ -363,8 +385,169 @@
                 </div>
             </div>
         </section>
+
+        <section id="Our-Clients-Section" class="OurClientsSection">
+            <div class="box box1 ClientsBox text-center m-auto border-0">
+                <h3 class="text-uppercase text-green fs-6 fw-bolder letter-space-3 mb-0">our clients</h3>
+                <h2 class="text-dark display-4 fw-bolder mb-5">Glint has been honored to partner up with these clients
+                </h2>
+            </div>
+    
+            <div class="ClientsBrandLogo">
+                <ul class="d-flex justify-content-center list-unstyled mb-4">
+                    <li><i class="fa-brands fa-apple cursor-pointer"></i></li>
+                    <li><i class="fa-solid fa-atom cursor-pointer"></i></li>
+                    <li><i class="fa-brands fa-blackberry cursor-pointer"></i></li>
+                    <li><i class="fa-brands fa-dropbox cursor-pointer"></i></li>
+                    <li><i class="fa-solid fa-egg cursor-pointer"></i></li>
+                    <li><i class="fa-brands fa-firefox-browser cursor-pointer"></i></li>
+                </ul>
+                <div class="ClientsSecondUl">
+                    <ul class="d-flex justify-content-center list-unstyled gap-3">
+                        <li><i class="fa-solid fa-circle cursor-pointer"></i></li>
+                        <li><i class="fa-solid fa-circle cursor-pointer"></i></li>
+                        <li><i class="fa-solid fa-circle cursor-pointer"></i></li>
+                        <li><i class="fa-solid fa-circle cursor-pointer"></i></li>
+                    </ul>
+                </div>
+                <div class="Services-Horizontal-Line Clients-Horizontal-Line m-auto mb-4 position-relative"></div>
+            </div>
+    
+            <div class="container ClientsSlider">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="Images/Slider-Pic-3.png" class="w-75 d-block m-auto mt-5">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="Images/Slider-Pic-2.png" class="w-75 d-block m-auto mt-5">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/Slider-Pic-1.png" class="w-75 d-block m-auto mt-5">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="Contact-Section" class="ContactSection">
+            <div class="ContactBlackTransparentLayer">
+                <div class="Contact-Vertical-Line m-auto position-absolute"></div>
+                <div class="box box1 Contact-Box text-center m-auto border-0">
+                    <h3 class="text-uppercase text-green fs-6 fw-bolder letter-space-3 mb-0">Contact Us</h3>
+                    <h2 class="text-light display-4 fw-bolder mb-5">Reach out for a new project or just say hello</h2>
+                </div>
+
+                <div class="Contact-Form row m-auto">
+                    <div class="col-md-8 col-sm-12 Contact-Form-BG1">
+                        <div class="Contact-Form-In Contact-Form-In-1">
+                            <h2 class="text-light fs-7 fw-bolder letter-space-3 text-uppercase mb-5">Send Us A Message
+                            </h2>
+                            <form class="">
+                                <div class="mb-4">
+                                    <input type="text" name="Name" class="w-100 pb-3" placeholder="Your Name">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="text" name="Name" class="w-100 pb-3" placeholder="Your Name">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="text" name="Name" class="w-100 pb-3" placeholder="Your Name">
+                                </div>
+                                <div class="mb-5">
+                                    <textarea name="Message" minlength="15" placeholder="Your Message" rows="8"
+                                        class="w-100 pb-3"></textarea>
+                                </div>
+                                <div class="FormBtn d-grid gap-2">
+                                    <button
+                                        class="btn btn-success rounded-0 py-3 fs-7 fw-bolder letter-space-3 text-uppercase text-light"
+                                        type="submit">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 Contact-Form-BG2">
+                        <div class="Contact-Form-In Contact-Form-In-2">
+                            <h2 class="text-light fs-7 fw-bolder letter-space-3 text-uppercase">Contact Info</h2>
+                            <div class="Contact-address Contact-In-Text2 mb-5">
+                                <h2 class="text-green fs-6 fw-bolder mb-3">Where to Find Us</h2>
+                                <span class="text-muted my-2 fs-6">1600 Amphitheatre Parkway</span>
+                                <span class="text-muted my-2 fs-6">Mountain View, CA</span>
+                                <span class="text-muted my-2 fs-6">94943 US</span>
+                            </div>
+                            <div class="Contact-email Contact-In-Text2 mb-5">
+                                <h2 class="text-green fs-6 fw-bolder mb-3">Email Us At</h2>
+                                <span class="text-muted my-2 fs-6">contact@glintsite.com</span>
+                                <span class="text-muted my-2 fs-6">info@glintsite.com</span>
+                            </div>
+                            <div class="Contact-phone Contact-In-Text2 mb-5">
+                                <h2 class="text-green fs-6 fw-bolder mb-3">Call Us At</h2>
+                                <span class="text-muted my-2 fs-6">Phone: (+63) 555 1212</span>
+                                <span class="text-muted my-2 fs-6">Mobile: (+63) 555 0100</span>
+                                <span class="text-muted my-2 fs-6">Fax: (+63) 555 0100</span>
+                            </div>
+                            <div class="Contact-social">
+                                <span class="text-light me-2 fs-5 cursor-pointer"><i class="bi bi-facebook"></i></span>
+                                <span class="text-light me-2 fs-5 cursor-pointer"><i class="bi bi-twitter"></i></span>
+                                <span class="text-light me-2 fs-5 cursor-pointer"><i class="bi bi-instagram"></i></span>
+                                <span class="text-light me-2 fs-5 cursor-pointer"><i class="bi bi-behance"></i></span>
+                                <span class="text-light me-2 fs-5 cursor-pointer"><i class="bi bi-dribbble"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <footer>
+        <div class="Footer-Container row">
+            <div class="col-md-6">
+                <div class="Footer-First-1 mb-4">
+                    <img src="Images/Logo2.webp" width="90" alt="Glint.">
+                </div>
+                <div class="Footer-First-2">
+                    <p>Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh
+                        pulvinar a. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris
+                        blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Nulla
+                        porttitor accumsan tincidunt. Quaerat voluptas autem necessitatibus vitae aut.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="Footer-Second-1 mb-4">
+                    <h2 class="text-light fs-5 fw-bolder">Get Notified</h2>
+                </div>
+                <div class="Footer-Second-2 mb-4">
+                    <p>Quia quo qui sed odit. Quaerat voluptas autem necessitatibus vitae aut non
+                        alias sed quia. Ut itaque enim optio ut excepturi deserunt iusto porro.</p>
+                </div>
+                <div class="Footer-Second-3">
+                    <div class="Footer-Second-3-Input d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <span class="Footer-Envelope-Span"><i class="bi bi-envelope fs-5 text-light px-3"></i></span>
+                            <span><input class="" type="email" name="User-Email" placeholder="Email Address"></span>
+                        </div>
+                        <span><button
+                                class="btn rounded-0 py-3 fs-7 fw-bolder letter-space-3 text-uppercase  text-light"
+                                type="button">Subscribe</button></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Footer-Copyright text-center text-muted fs-6">
+            &copy; Copyright Glint 2022 <span class="Footer-Copyright-Last ms-4">Site Template by <span
+                    class="text-light">Subaiyal</span></span>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"

@@ -49,6 +49,10 @@
     font-weight: bolder;
 }
 
+.Navigation-Menu {
+    max-width: 280px;
+}
+
 .navigation-span {
     color: rgb(171, 171, 171);
 }
@@ -88,7 +92,12 @@
     padding: 14px 25px;
     font-size: 13px;
     letter-spacing: 2px;
+    border: 2px solid white;
     transition: all 0.4s ease-in-out;
+}
+
+.Hero-Buttons a:nth-child(2) button {
+    margin-left: 16px;
 }
 
 .Hero-Social {
@@ -105,7 +114,6 @@
 .Social-Li-Span {
     position: absolute;
     right: 54px;
-    /* top: 30px; */
     display: none;
     animation: socialLis 0.5s ease-in-out;
 }
@@ -152,7 +160,7 @@
 }
 
 .box3 {
-    max-width: 87.6%;
+    max-width: 1000px;
 }
 
 .box3 span {
@@ -160,7 +168,6 @@
 }
 
 .inBox3 {
-    padding: 0 60px;
     border-right: 1px solid rgba(255, 255, 255, 0.381);
 }
 
@@ -190,14 +197,22 @@
     font-family: "lora-regular", serif;
 }
 
+.Services-Image-Hidden {
+    display: none;
+}
+
 .Services-Box {
     max-width: 900px;
 }
 
 .Services-Horizontal-Line {
     height: 1px;
-    width: 550px;
+    width: 55%;
     background-color: rgba(0, 0, 0, 0.108);
+}
+
+.WorksSection {
+    height: 2365px;
 }
 
 .Works-Text {
@@ -207,26 +222,24 @@
 }
 
 .Works-Images {
-    width: 1120px;
     top: 48px;
-    /* padding-bottom: 144px; */
+    padding-bottom: 144px;
 }
 
 .Work-Image {
     width: fit-content;
     height: fit-content;
-    background-color: red;
     position: relative;
     cursor: pointer;
     overflow: hidden;
 }
 
-.Work-Image > img {
+.Work-Image>img {
     transition: all 0.6s ease-in-out;
 }
 
 
-.Work-Image:hover > img {
+.Work-Image:hover>img {
     transform: scale(1.1);
 }
 
@@ -275,4 +288,475 @@
 .Work-Image-Hover-3 p {
     font-size: 13px;
     color: rgb(151, 151, 151);
+}
+
+.OurClientsSection {
+    padding: 162px 0 168px;
+    background-color: #e6e6e6;
+}
+
+.ClientsBox {
+    max-width: 950px;
+}
+
+.ClientsBrandLogo {
+    margin-top: 90px;
+}
+
+.ClientsBrandLogo>ul {
+    gap: 80px;
+}
+
+.ClientsBrandLogo>ul li i {
+    font-size: 120px;
+    color: #7d7d7d;
+    transition: color 0.5s ease-in-out;
+}
+
+.ClientsBrandLogo>ul li i:hover {
+    color: black;
+}
+
+.ClientsSecondUl {
+    margin-top: 56px;
+}
+
+.ClientsSecondUl ul li i {
+    font-size: 11px;
+    color: #7d7d7d;
+    transition: color 0.3s ease-in-out;
+}
+
+.ClientsSecondUl ul li i:hover {
+    color: #39b54a;
+}
+
+.ClientsSecondUl ul li:first-child i {
+    color: #39b54a;
+}
+
+.Clients-Horizontal-Line {
+    top: 55px;
+}
+
+.ClientsSlider {
+    margin-top: 80px;
+}
+
+.Contact-Vertical-Line {
+    height: 204px;
+    width: 2px;
+    background-color: #39b54a;
+    bottom: 91.4%;
+    left: 50%;
+}
+
+.ContactSection {
+    background-image: url('Images/Contact-Background.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.ContactBlackTransparentLayer {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 120px;
+    background-color: rgba(21, 21, 21, 0.769);
+    padding-top: 150px;
+}
+
+.Contact-Box {
+    max-width: 950px;
+}
+
+.Contact-Form {
+    max-width: 1000px;
+}
+
+.Contact-Form-BG1 {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 60px 50px 100px;
+}
+
+.Contact-Form-BG2 {
+    background-color: rgb(18, 18, 18);
+    padding: 60px 50px 100px;
+}
+
+.Contact-Form-In-1 input,
+.Contact-Form-In-1 textarea {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid rgb(46, 46, 46);
+    outline: none;
+    transition: border .3s ease-in-out;
+}
+
+.Contact-Form-In-1 input:focus,
+.Contact-Form-In-1 textarea:focus {
+    border: none;
+    border-bottom: 1px solid #39b54a;
+}
+
+.Contact-Form-In-1 input::placeholder,
+.Contact-Form-In-1 textarea::placeholder {
+    color: rgb(78, 78, 78);
+    font-size: 14px;
+}
+
+.FormBtn button {
+    background-color: #39b54a;
+}
+
+.FormBtn button:hover {
+    background-color: #2d973b;
+}
+
+.Contact-Form-In-2>h2 {
+    margin: 0 0 50px;
+}
+
+.Contact-In-Text2 span {
+    display: block;
+}
+
+.Contact-social span i {
+    transition: color 0.3s ease-in-out;
+}
+
+.Contact-social span i:hover {
+    color: #39b54a;
+}
+
+footer {
+    padding: 90px 0 60px;
+    background-color: rgb(17, 17, 17);
+}
+
+.Footer-Container {
+    max-width: 950px;
+    margin: 0 auto 75px;
+    font-family: "montserrat-light", sans-serif;
+}
+
+.Footer-First-2 p,
+.Footer-Second-2 p {
+    color: rgba(255, 255, 255, 0.3);
+    line-height: 28px;
+}
+
+.Footer-Second-3-Input {
+    background-color: black;
+}
+
+.Footer-Second-3-Input span input {
+    background-color: transparent;
+    padding: 10px 5px;
+    outline: none;
+    border: none;
+    width: 64%;
+    color: white;
+}
+
+.Footer-Second-3-Input span input::placeholder {
+    color: white;
+    font-size: 15px;
+}
+
+.Footer-Second-3-Input span button {
+    background-color: #39b54a;
+    border: none;
+}
+
+.Footer-Second-3-Input span button:hover {
+    background-color: #39b54a;
+}
+
+
+/* MEDIA QUERY STARTS! */
+@media screen and (max-width: 1140px) {
+    .box3 .col-md-3 {
+        width: 50%;
+    }
+
+    .inBox3 {
+        margin-top: 30px;
+        border: none;
+        border-right: 2px solid rgba(255, 255, 255, 0.381);
+    }
+
+    .inBox3-2 {
+        border: none;
+    }
+
+    .inBox3-4 {
+        border: none;
+    }
+
+    .box3 {
+        max-width: 800px;
+    }
+
+    .Work-Image {
+        width: 450px;
+        margin: auto;
+    }
+
+    .ClientsBrandLogo>ul li:nth-child(5) {
+        display: none;
+    }
+
+    .ClientsBrandLogo>ul li:nth-child(6) {
+        display: none;
+    }
+
+    .ClientsBrandLogo>ul li i {
+        font-size: 140px;
+    }
+
+    .WorksSection {
+        height: 1992px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .Hero-Content .Hero-H1 {
+        font-size: 48px;
+        max-width: 549px;
+    }
+
+    .Hero-Buttons {
+        margin-top: 111px;
+    }
+
+    .Work-Image {
+        width: 390px;
+    }
+
+    .WorksSection {
+        height: 1780px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .Hero-Content .Hero-H1 {
+        font-size: 40px;
+        max-width: 456px;
+    }
+
+    .Hero-Buttons {
+        margin-top: 100px;
+    }
+
+    .Work-Image {
+        width: 290px;
+    }
+
+    .WorksSection {
+        height: 1450px;
+    }
+
+    .ClientsBrandLogo>ul li:nth-child(4) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .Services-Grid-Container {
+        text-align: center;
+    }
+
+    .Services-Image-Hidden {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    .Services-Image-Visible {
+        display: none;
+    }
+
+    .Contact-Form-BG2 {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .Contact-Vertical-Line {
+        bottom: 94.4%;
+    }
+
+    .Footer-Container {
+        margin: 0px 80px 75px;
+    }
+
+    .Footer-Second-1 {
+        margin: 25px 0 !important;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .Hero-Buttons a button {
+        width: 60%;
+    }
+
+    .Hero-Buttons a:nth-child(2) button {
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+
+    .Hero-Content {
+        padding-left: 0px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Hero-Social li i {
+        padding: 2px;
+        border: none;
+    }
+
+    .Hero-Social {
+        right: 2%;
+    }
+
+    .Hero-Social ul li {
+        margin: 12px 0 !important;
+    }
+
+    .box3 .col-md-3 {
+        width: 100%;
+    }
+
+    .inBox3 {
+        margin-top: 30px;
+        border: none;
+    }
+
+    .inBox3 {
+        margin-top: 30px;
+        border: none;
+    }
+
+    .inBox3 h5 {
+        width: 40%;
+        margin: auto;
+        padding-bottom: 45px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.381);
+    }
+
+    .inBox3-4 h5 {
+        width: 40%;
+        margin: auto;
+        border: none;
+    }
+
+    .inBox3-4 {
+        border: none;
+    }
+
+    .box3 {
+        max-width: 800px;
+    }
+
+    .Work-Image {
+        width: 480px;
+    }
+
+    .Works-Images {
+        flex-wrap: wrap;
+        width: 80px;
+    }
+
+    .WorksSection {
+        height: 3570px;
+    }
+
+    .ClientsBrandLogo>ul li i {
+        font-size: 110px;
+    }
+    
+    .Footer-Container {
+        margin: 0px 18px 75px;
+    }
+
+    .Footer-Second-1 {
+        margin: 25px 0 !important;
+    }
+
+    .Footer-First-1 {
+        text-align: center;
+    }
+
+    .Footer-Copyright .Footer-Copyright-Last {
+        display: block;
+        margin: 5px 0 0 !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Hero-Social {
+        display: none;
+    }
+
+    .Hero-Content {
+        text-align: center;
+    }
+
+    .Hero-Content .Hero-H1 {
+        font-size: 37px;
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .Hero-Buttons a button {
+        width: 78%;
+    }
+
+    .Hero-Buttons {
+        margin-top: 45px;
+    }
+
+    .Work-Image {
+        width: 300px;
+    }
+
+    .WorksSection {
+        height: 2440px;
+    }
+
+    .ClientsBrandLogo>ul li:nth-child(3) {
+        display: none;
+    }
+
+    .Footer-Envelope-Span {
+        display: none;
+    }
+
+    .Footer-Second-3-Input {
+        flex-wrap: wrap;
+    }
+
+    .Footer-Second-3-Input > div,
+    .Footer-Second-3-Input > div span,
+    .Footer-Second-3-Input > span,
+    .Footer-Second-3-Input > span button {
+        width: 100%;
+    }
+
+    .Footer-Second-3-Input > div input {
+        width: 100%;
+        text-align: center;
+        padding: 17px 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .Hero-Content .Hero-H1 {
+        font-size: 34px;
+    }
+
+    .Hero-Buttons {
+        margin-top: 40px;
+    }
 }
