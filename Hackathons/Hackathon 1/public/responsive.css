@@ -1,0 +1,19 @@
+@media screen and (max-width: 1040px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
+
+@media screen and (max-width: 747px) {
+    body {
+        background-color: rgb(144, 160, 238);
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: rgb(238, 144, 178);
+    }
+}

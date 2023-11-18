@@ -1,0 +1,155 @@
+/* Stylesheet For Own Utilities Classes */
+
+
+/* For Text Color */
+.text-blue {
+    color: #1fb6fc !important;
+}
+
+.text-brown {
+    color: rgb(184, 101, 0) !important;
+}
+
+.text-gray {
+    color: #88879e !important;
+}
+
+/* For Text Hover */
+.hover-text-green:hover {
+    color: rgb(54, 223, 62) !important;
+}
+
+.hover-text-blue:hover {
+    color: #1fb6fc !important;
+}
+
+.hover-text-white:hover {
+    color: rgb(255, 255, 255) !important;
+}
+
+.hover-text-black:hover {
+    color: rgb(0, 0, 0) !important;
+}
+
+/* For Font Sizes */
+.fs-7 {
+    font-size: 14px !important;
+}
+
+.fs-8 {
+    font-size: 12px !important;
+}
+
+/* For Letter Spacing */
+.letter-space-1 {
+    letter-spacing: 1px;
+}
+
+.letter-space-2 {
+    letter-spacing: 2px;
+}
+
+.letter-space-3 {
+    letter-spacing: 3px;
+}
+
+/* For Background Colors */
+.bg-blue {
+    background-color: #1fb6fc !important;
+}
+
+.hover-bg-blue:hover {
+    background-color: #1fb6fc !important;
+}
+
+.bg-purple {
+    background-color: #bc6ff1 !important;
+}
+
+/* For Cursors */
+.cursor-pointer {
+    cursor: pointer !important;
+}
+
+/* For Margin */
+.m-6 {
+    margin: 55px !important;
+}
+
+.my-6 {
+    margin-top: 55px !important;
+    margin-bottom: 55px !important;
+}
+
+.mx-6 {
+    margin-right: 55px !important;
+    margin-left: 55px !important;
+}
+
+.mt-6 {
+    margin-top: 55px !important;
+}
+
+.mb-6 {
+    margin-bottom: 55px !important;
+}
+
+.me-6 {
+    margin-right: 55px !important;
+}
+
+.ms-6 {
+    margin-left: 55px !important;
+}
+
+/* For Padding */
+.p-6 {
+    padding: 55px !important;
+}
+
+.py-6 {
+    padding-top: 55px !important;
+    padding-bottom: 55px !important;
+}
+
+.px-6 {
+    padding-right: 55px !important;
+    padding-left: 55px !important;
+}
+
+.pt-6 {
+    padding-top: 55px !important;
+}
+
+.pb-6 {
+    padding-bottom: 55px !important;
+}
+
+.pe-6 {
+    padding-right: 55px !important;
+}
+
+.ps-6 {
+    padding-left: 55px !important;
+}
+
+/* For Transitions */
+.transition-1 {
+    transition: all 1s ease-in-out !important;
+}
+
+.transition-2 {
+    transition: all 0.2s ease-in-out !important;
+}
+
+.transition-3 {
+    transition: all 0.3s ease-in-out !important;
+}
+
+.transition-4 {
+    transition: all 0.4s ease-in-out !important;
+}
+
+.transition-5 {
+    transition: all 0.5s ease-in-out !important;
+}

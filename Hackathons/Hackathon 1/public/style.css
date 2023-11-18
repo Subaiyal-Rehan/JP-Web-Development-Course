@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+/* Header CSS Starts */
+.First-Bg-Color {
+    background-color: rgb(119 87 217);
+}
+
+.Header-Div {
+    padding: 32px 78px 16px 59px;
+}
+
+.Header-Div ul li a {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.Header-Underline-First {
+    height: 2px;
+    width: 55%;
+}
+
+.Header-Underline {
+    height: 2px;
+    width: 0%;
+}
+
+.Header-Div ul li:hover .Header-Underline {
+    width: 65%;
+}
+
+/* Hero Section CSS Starts */
+.Hero-Section {
+    padding-bottom: 90px;
+}
+
+.Hero-Content1>p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.Corner-Lifted-Button {
+    padding: 12px 25px;
+    border-bottom-left-radius: 0px !important;
+}
+
+.Corner-Lifted-Button:hover {
+    border-bottom-left-radius: 32px !important;
+    border-top-left-radius: 0px !important;
+}
+
+.Hero-Content2 img {
+    width: 650px;
+}
+
+/* Services Section CSS Starts */
+.Services-Section {
+    padding: 92px 0;
+}
+
+.Services-Content1 p {
+    line-height: 28px;
+    padding-right: 36px;
+}
+
+.Services-Content1 .Corner-Lifted-Button {
+    padding: 12px 19px;
+}
+
+.Services-Content2 {
+    background-image: linear-gradient(to bottom, white, #f3f3f3, white);
+}
+
+.Services-Card-Icon i {
+    padding: 14px;
+    background-color: #eff2ff;
+}
+
+.Services-Card {
+    width: 227px;
+}
+
+.Services-Card:hover .Services-Card-Heading h2,
+.Services-Card:hover .Services-Card-Para p {
+    color: white !important;
+}
+
+
+/* Progress Section CSS Starts */
+.Progress-Section  {
+    padding: 0 0 96px;
+}
+
+.Progress-Section > div {
+    box-shadow: 0px 6px 13px -8px #7a7a7a;
+}
+
+/* About Section CSS Starts */
+.About-Section {
+    padding: 96px 0;
+}
+
+/* Team Section CSS Starts */
+.Team-Section {
+    padding: 96px 0;
+}
+
+.Team-Card {
+    overflow: hidden;
+}
+
+.Team-Card-Img {
+    height: 450px;
+    width: 350px;
+}
+
+.Team-Card-Img img {
+    right: 15%;
+}
+
+.Team-Card:hover .Team-Card-Social-Icons {
+    display: flex !important;
+}
+
+.Team-Card-Social-Icons  {
+    top: 63%;
+    left: 4%;
+    display: none !important;
+    animation: op 0.3s ease-in-out;
+}
+
+@keyframes op {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
+.Team-Card-Social-Icons i {
+    color: #a641ec;
+    background-color: #f2e3fc;
+}
+
+.Team-Card-Text {
+    width: 104%;
+}
+
+.Team-Card:hover .Team-Card-Text {
+    background-color: #f2e3fc;
+}
+
+/* Customers Section */
+.Customers-Section {
+    padding: 96px 0;
+    background-color: rgb(249, 250, 255);
+}
+
+.Customer-Card-Icon i {
+    left: 45%;
+    bottom: 25px;
+}
+
+/* Choose Section */
+.Choose-Purple-Bg {
+    background-image: linear-gradient(to right, #684beb, #a67dfa);
+    height: 600px;
+}
+
+.Choose-Text {
+    padding: 80px 0;
+}
+
+.Choose-Card {
+    width: 300px;
+}
+
+.Choose-Card:hover .Services-Card-Icon i {
+    background-color: white !important;
+    color: #1fb6fc !important;
+}
+
+.Choose-Card .Services-Card-Para p {
+    line-height: 30px;
+}
+
+.Choose-Gray-Bg {
+    background-color: #f9faff;
+    padding: 230px 0 100px;
+}
+
+.Choose-Gray-Bg div {
+    max-width: 1100px;
+}
+
+/* Work Section */
+.Work-Section {
+    padding: 90px 0 0;
+}
+
+.Work-Cards-Container .Team-Card:hover .Team-Card-Text {
+    background-color: rgb(234, 245, 255);
+}
+
+.Work-Cards-Container .Team-Card-Text {
+    width: 84%;
+}
+
+.Work-Cards-Container .Team-Card-Text button {
+    background-color: rgb(255, 255, 255);
+    color: #88879e;
+}
+
+.Work-Cards-Container .Team-Card:hover .Team-Card-Text button {
+    background-color: rgb(247, 247, 247);
+    color: white;
+}
+
+.Work-Viewmore {
+    background-image: linear-gradient(rgb(243, 243, 243), white);
+    padding: 65px 0 100px;
+}
+
+/* Pricing Section */
+.Pricing-Section {
+    padding: 96px 0;
+}
+
+.Pricing-Card {
+    box-shadow: 0px 8px 16px 4px #e1e1e1;
+}
+
+.Pricing-Card-Facility-Inner {
+    background-color: #f9faff;
+}
+
+/* Pricing Section */
+.Blog-Section {
+    padding: 96px 0 90px;
+    background-color: rgb(249, 250, 255);
+}
+
+.Blog-Card {
+    box-shadow: 0px 8px 16px 4px #e1e1e1;
+}
+
+/* Footer CSS Starts */
