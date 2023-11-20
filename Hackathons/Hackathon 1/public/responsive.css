@@ -1,19 +1,302 @@
-@media screen and (max-width: 1040px) {
-    body {
-        background-color: lightgreen;
+@media screen and (max-width: 1162px) {
+    .Choose-Gray-Bg {
+        padding: 265px 0 100px !important;
+    }
+
+    .Work-Cards-Container .Team-Card-Text {
+        width: 105% !important;
     }
 }
 
+@media screen and (max-width: 1399px) {
+    .Hero-Content-Container {
+        max-width: 1000px !important;
+    }
 
-@media screen and (max-width: 747px) {
-    body {
-        background-color: rgb(144, 160, 238);
+    .Hero-Content2 img {
+        width: 500px !important;
+        margin-left: 40px;
     }
 }
 
+@media screen and (max-width: 1199px) {
+    .Hero-Content-Container {
+        max-width: 800px !important;
+    }
 
-@media screen and (max-width: 600px) {
-    body {
-        background-color: rgb(238, 144, 178);
+    .Hero-Content2 img {
+        width: 400px !important;
+    }
+
+    .Hero-Content1 button {
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 1129px) {
+    .Services-Content2 .justify-content-between {
+        justify-content: center !important;
+    }
+
+    .Choose-Gray-Bg {
+        padding: 314px 0 100px !important;
+        text-align: center;
+    }
+
+    .Choose-Gray-Bg div {
+        max-width: 900px !important;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .Choose-Gray-Bg {
+        padding: 383px 0 100px !important;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    nav.navbar {
+        background-color: #2a3a60;
+    }
+
+    .Header-Div ul.justify-content-end {
+        margin-top: 20px;
+        flex-direction: column;
+        justify-content: start !important;
+    }
+
+    .Header-Underline-First {
+        height: 2px !important;
+        width: 0% !important;
+    }
+
+    .Header-Underline {
+        height: 2px !important;
+        width: 0% !important;
+        transition: all 0.3s ease-in-out !important;
+    }
+
+    .Header-Div ul li:hover .Header-Underline {
+        width: 94% !important;
+    }
+
+    .Hero-Content2 img {
+        width: 340px !important;
+        margin-left: 45px;
+    }
+
+    .Hero-Content1 button {
+        padding: 10px 15px;
+    }
+
+    .Newsletter-Section > div {
+        padding: 0 !important;
+    }
+
+    .Footer-Links > div {
+        flex-direction: column;
+    }
+
+    .Footer-Links > .container {
+        max-width: 100%;
+    }
+
+    .Footer-Flex-Item1 {
+        margin-left: 15px;
+    }
+
+    .Footer-Flex-Item {
+        margin-top: 20px;
+    }
+
+    .Footer-Flex-Item {
+        width: 50%;
+    }
+
+    .Footer-Flex-Item4 {
+        width: 53%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .Services-Content1 {
+        max-width: 550px;
+        margin: 0 auto 25px;
+    }
+
+    .Progress-Numbers {
+        margin-top: 50px;
+    }
+
+    .About-Second-Div {
+        margin-top: 30px !important;
+    }
+
+    .Hero-Content1 {
+        position: relative;
+        z-index: 5;
+    }
+
+    .Hero-Section {
+        padding: 130px 10%;
+    }
+
+    .Hero-Content2 {
+        overflow: hidden;
+        justify-content: center;
+    }
+
+    .Hero-Content1 h1 {
+        font-size: 37px;
+    }
+
+    .Hero-Content2 img {
+        width: 80% !important;
+        position: absolute;
+        z-index: 1;
+        opacity: 0.3;
+        top: 130px;
+    }
+
+    .Hero-Social-Icons {
+        margin-top: 50px;
+    }
+
+    .Team-Section>.Team-Text {
+        max-width: 75% !important;
+    }
+
+    .Customers-Section .Customer-Text {
+        max-width: 75% !important;
+    }
+
+    .Customers-Card3 {
+        display: none;
+    }
+
+    .Customer-Card-Col {
+        width: 50% !important;
+    }
+
+    .Choose-Text {
+        width: 75% !important;
+    }
+
+    .Choose-Card {
+        margin-top: 30px;
+    }
+
+    .Choose-Gray-Bg {
+        background-color: #f9faff;
+        padding: 615px 0 100px !important;
+    }
+
+    .Work-Text {
+        width: 75% !important;
+    }
+
+    .Team-Card {
+        margin-top: 30px !important;
+    }
+
+    .Pricing-Text {
+        width: 75% !important;
+    }
+
+    .Pricing-Card-Col {
+        margin-top: 30px;
+    }
+
+    .Blog-Text {
+        width: 75% !important;
+    }
+
+    .Blog-Card-Col {
+        margin-top: 30px;
+    }
+
+    .News-Input-Div {
+        margin-top: 13px;
+        padding-left: 14px !important;
+        padding-right: 14px !important;
+    }
+
+    .Footer-Links-Section .container {
+        flex-direction: column;
+        width: 100% !important;
+    }
+
+    .Footer-Flex-Item {
+        width: 90% !important;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .Choose-Gray-Bg {
+        padding: 686px 0 100px !important;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .Customers-Card2 {
+        display: none;
+    }
+
+    .Customer-Card-Col {
+        width: 100% !important;
+    }
+
+    .Choose-Gray-Bg {
+        padding: 753px 0 100px !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .Progress-Section {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+
+    .Hero-Section {
+        padding: 130px 0px;
+    }
+
+    .Hero-Content1 {
+        padding: 0px 0px;
+    }
+
+    .Team-Card {
+        width: 395px !important;
+        margin: 30px auto !important;
+    }
+
+    .Team-Card-Text {
+        width: 101% !important;
+    }
+
+    .Choose-Gray-Bg {
+        padding: 1087px 0 100px !important;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .Services-Content2 .Services-Card {
+        width: 100% !important;
+    }
+
+    .Choose-Gray-Bg {
+        padding: 1180px 0 100px !important;
+    }
+}
+
+@media screen and (max-width: 429px) {
+    .Choose-Gray-Bg {
+        padding: 1318px 0 100px !important;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .Choose-Gray-Bg {
+        padding: 1443px 0 100px !important;
     }
 }

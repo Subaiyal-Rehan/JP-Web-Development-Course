@@ -6,7 +6,7 @@
 
 /* Header CSS Starts */
 .First-Bg-Color {
-    background-color: rgb(119 87 217);
+    background-image: linear-gradient(45deg, rgb(85, 59, 230) 0%, rgb(168, 127, 250) 100%);
 }
 
 .Header-Div {
@@ -88,11 +88,11 @@
 
 
 /* Progress Section CSS Starts */
-.Progress-Section  {
+.Progress-Section {
     padding: 0 0 96px;
 }
 
-.Progress-Section > div {
+.Progress-Section>div {
     box-shadow: 0px 6px 13px -8px #7a7a7a;
 }
 
@@ -106,6 +106,10 @@
     padding: 96px 0;
 }
 
+.Team-Section>.Team-Text {
+    max-width: 50%;
+}
+
 .Team-Card {
     overflow: hidden;
 }
@@ -115,15 +119,11 @@
     width: 350px;
 }
 
-.Team-Card-Img img {
-    right: 15%;
-}
-
 .Team-Card:hover .Team-Card-Social-Icons {
     display: flex !important;
 }
 
-.Team-Card-Social-Icons  {
+.Team-Card-Social-Icons {
     top: 63%;
     left: 4%;
     display: none !important;
@@ -131,10 +131,11 @@
 }
 
 @keyframes op {
-    from{
+    from {
         opacity: 0%;
     }
-    to{
+
+    to {
         opacity: 100%;
     }
 }
@@ -158,6 +159,10 @@
     background-color: rgb(249, 250, 255);
 }
 
+.Customers-Section .Customer-Text {
+    max-width: 50%;
+}
+
 .Customer-Card-Icon i {
     left: 45%;
     bottom: 25px;
@@ -171,10 +176,11 @@
 
 .Choose-Text {
     padding: 80px 0;
+    width: 50%;
 }
 
 .Choose-Card {
-    width: 300px;
+    width: 100% !important
 }
 
 .Choose-Card:hover .Services-Card-Icon i {
@@ -200,12 +206,16 @@
     padding: 90px 0 0;
 }
 
+.Work-Text {
+    width: 50%;
+}
+
 .Work-Cards-Container .Team-Card:hover .Team-Card-Text {
     background-color: rgb(234, 245, 255);
 }
 
 .Work-Cards-Container .Team-Card-Text {
-    width: 84%;
+    width: 85%;
 }
 
 .Work-Cards-Container .Team-Card-Text button {
@@ -214,7 +224,7 @@
 }
 
 .Work-Cards-Container .Team-Card:hover .Team-Card-Text button {
-    background-color: rgb(247, 247, 247);
+    background-color: rgb(192, 225, 255);
     color: white;
 }
 
@@ -228,6 +238,10 @@
     padding: 96px 0;
 }
 
+.Pricing-Text {
+    width: 50%;
+}
+
 .Pricing-Card {
     box-shadow: 0px 8px 16px 4px #e1e1e1;
 }
@@ -236,14 +250,59 @@
     background-color: #f9faff;
 }
 
-/* Pricing Section */
+/* Blog Section */
 .Blog-Section {
     padding: 96px 0 90px;
     background-color: rgb(249, 250, 255);
+}
+
+.Blog-Text {
+    width: 50%;
 }
 
 .Blog-Card {
     box-shadow: 0px 8px 16px 4px #e1e1e1;
 }
 
+
+/* Newsletter Section */
+.Newsletter-Section {
+    padding: 50px 0;
+    background-color: rgb(13, 110, 253);
+}
+
+.News-Input-Div {
+    padding-bottom: 38px !important;
+}
+
+
+.News-Input-Div input {
+    background-color: transparent;
+    border: none;
+}
+
+.News-Input-Div input:focus {
+    border: none;
+    outline: none;
+}
+
+.News-Input-Div input::placeholder {
+    color: white;
+}
+
 /* Footer CSS Starts */
+.Footer-Links-Section {
+    background-color: #e5e9ff;
+}
+
+.Footer-Flex-Item4 {
+    width: 43%;
+}
+
+.Copyright-Section {
+    background-image: linear-gradient(45deg, rgb(85, 59, 230) 0%, rgb(168, 127, 250) 100%);
+}
+
+.Copyright-Section span {
+    color: rgba(255,255,255,.5);
+}
