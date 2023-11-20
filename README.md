@@ -23,8 +23,7 @@ This repository is organized to include:
 ### Resources
 
 Additional resources related to the course, recommended readings, and useful links can be found here:
-- <a href="https://subaiyal-rehan.github.io/JP-Web-Development-Course/" target="_blank">Website of this course</a>
-
+- [Website of this course](https://subaiyal-rehan.github.io/JP-Web-Development-Course/){:target="_blank"}
 
 ### Contact
 
