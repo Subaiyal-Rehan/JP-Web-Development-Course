@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript QnA - By Subaiyal Rehan</title>
+    <link rel="shortcut icon" href="Favicon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="PrismJs/prism.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 5px 30px 0 10px;
+        }
+
+        .chapter {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 19px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .chapter>h1 {
+            text-align: center;
+            text-decoration: underline;
+            padding: 5px 0;
+            border-radius: 5px;
+            background-color: #712d0027;
+        }
+
+        .question {
+            margin: 0px 0 5px 30px;
+        }
+
+        .answer {
+            margin-left: 30px;
+            font-style: italic;
+        }
+
+        .answer>p {
+            color: #712d00;
+        }
+
+        .code-block {
+            margin-left: 20px;
+            font-family: 'Courier New', monospace !important;
+            width: 90vw;
+        }
+
+        fieldset {
+            padding: 20px 20px 25px 0px;
+            margin: 15px 20px 20px;
+            background-color: rgb(254, 254, 250);
+        }
+
+        legend {
+            margin-left: 7px;
+        }
+
+        hr {
+            margin: 50px 0;
+            color: rgba(93, 93, 93, 0.488);
+        }
+
+        pre {
+            max-width: 1700px;
+            overflow-x: auto;
+        }
+
+        @media screen and (max-width: 1150px) {
+            .code-block {
+                width: 80vw;
+                margin: auto;
+            }
+        }
+
+        @media screen and (max-width: 580px) {
+            .code-block {
+                width: 75vw;
+            }
+
+            fieldset {
+                overflow: hidden;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Chapter 1 -->
+    <div class="chapter">
+        <h1>Chapter 1: Alerts</h1>
+
+        <!-- Question 1 -->
+        <fieldset>
+            <legend>Chapter 1: Question 1</legend>
+            <div class="question">
+                <p>Q1. Alert these following (individually):</p>
+                <ul style="margin-left: 35px;">
+                    <li>First Name</li>
+                    <li>Last Name</li>
+                    <li>Email</li>
+                    <li>Phone Number</li>
+                    <li>Password</li>
+                </ul>
+            </div>
+            <div class="answer">
+                <p>Answer 1:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">alert("First Name");
+alert("Last Name");
+alert("Email");
+alert("Phone Number");
+alert("Password");</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 2 -->
+        <fieldset>
+            <legend>Chapter 1: Question 2</legend>
+            <div class="question">
+                <p>Q2. Correct this statement: alert"You're learning JavaScript!";</p>
+            </div>
+            <div class="answer">
+                <p>Answer 2:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">alert("You're learning JavaScript!");</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 3 -->
+        <fieldset>
+            <legend>Chapter 1: Question 3</legend>
+            <div class="question">
+                <p>Q3. Code an alert statement displaying any message you like.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 3:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">alert("Hello! Welcome to JavaScript World!");</code></pre>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <hr>
+
+    <!-- Chapter 2 -->
+    <div class="chapter">
+        <h1>Chapter 2: Variables for string</h1>
+
+        <!-- Question 1 -->
+        <fieldset>
+            <legend>Chapter 2: Question 1</legend>
+            <div class="question">
+                <p>Q1. Declare any variable in the camelCase format.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 1:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">let myVariableName = "example";</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 2 -->
+        <fieldset>
+            <legend>Chapter 2: Question 2</legend>
+            <div class="question">
+                <p>Q2. Declare a variable of your choice without defining it. Then, in a second statement, assign it a
+                    string of your choice.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 2:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">let myVariable; // Declaring a variable without defining it
+myVariable = "Hello, world!"; // Assigning a string to the variable in a separate statement</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 3 -->
+        <fieldset>
+            <legend>Chapter 2: Question 3</legend>
+            <div class="question">
+                <p>Q3. Declare the variable teamName and Alert your Team name.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 3:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">let teamName = "Champions"; // Declaring the variable teamName and assigning a team name
+alert(teamName); // Displaying the team name using the alert function</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 4 -->
+        <fieldset>
+            <legend>Chapter 2: Question 4</legend>
+            <div class="question">
+                <p>Q4. This statement has already been coded. var bestMan = "Charlie"; Assign the variable a new string.
+                </p>
+            </div>
+            <div class="answer">
+                <p>Answer 4:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">var bestMan = "Charlie"; // This statement has already been coded
+bestMan = "David"; // Assigning a new string to the variable bestMan</code></pre>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <hr>
+
+    <!-- Chapter 3 -->
+    <div class="chapter">
+        <h1>Chapter 3: Variables for numbers</h1>
+
+        <!-- Question 1 -->
+        <fieldset>
+            <legend>Chapter 3: Question 1</legend>
+            <div class="question">
+                <p>Q1. Declare a variable “caseQty”</p>
+            </div>
+            <div class="answer">
+                <p>Answer 1:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">let caseQty; // Declaration of the variable caseQty</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 2 -->
+        <fieldset>
+            <legend>Chapter 3: Question 2</legend>
+            <div class="question">
+                <p>Q2. Assign to the variable caseQty, which has already been declared, the value 144.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 2:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">let caseQty; // Declaration of the variable caseQty
+caseQty = 144; // Assigning the value 144 to the variable caseQty</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 3 -->
+        <fieldset>
+            <legend>Chapter 3: Question 3</legend>
+            <div class="question">
+                <p>Q3. Rewrite this statement so the variable can be used in a math operation. var num = "9";</p>
+            </div>
+            <div class="answer">
+                <p>Answer 3:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">var num = "9"; // Original statement with num as a string
+var num = parseInt("9"); // Using parseInt to convert the string "9" to the number 9</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 4 -->
+        <fieldset>
+            <legend>Chapter 3: Question 4</legend>
+            <div class="question">
+                <p>Q4. In one statement declare a variable. In a second statement assign it the sum of 2 numbers.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 4:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">let result; // Declaring a variable named result
+result = 5 + 7; // Assigning the sum of 5 and 7 to the variable result</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 5 -->
+        <fieldset>
+            <legend>Chapter 3: Question 5</legend>
+            <div class="question">
+                <p>Q5. What is the value of orderTotal? var merchTotal = 100; var shippingCharge = 10; var orderTotal =
+                    merchTotal + shippingCharge;</p>
+            </div>
+            <div class="answer">
+                <p>Answer 5:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">var merchTotal = 100;
+var shippingCharge = 10;
+var orderTotal = merchTotal + shippingCharge;
+
+// The value of orderTotal is the sum of merchTotal and shippingCharge
+// orderTotal = merchTotal + shippingCharge
+// orderTotal = 100 + 10
+// orderTotal = 110</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 6 -->
+        <fieldset>
+            <legend>Chapter 3: Question 6</legend>
+            <div class="question">
+                <p>Q6. In the first statement declare a variable and assign it a number. In the second statement, change
+                    the value of the variable by adding it together with a number.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 6:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">let num = 5; // Declaring a variable num and assigning it a number, for instance, 5
+num += 3; // This is shorthand for num = num + 3;</code></pre>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <hr>
+
+    <!-- Chapter 4 -->
+    <div class="chapter">
+        <h1>Chapter 4: Variable names Legal and Illegal</h1>
+
+        <!-- Question 1 -->
+        <fieldset>
+            <legend>Chapter 4: Question 1</legend>
+            <div class="question">
+                <p>Q1. Correct this statement. var product cost = 3.45;</p>
+            </div>
+            <div class="answer">
+                <p>Answer 1:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">var productCost = 3.45;
+// By removing the space and combining 'product' and 'cost' into a single variable name ('productCost'), the statement becomes valid in JavaScript.</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 2 -->
+        <fieldset>
+            <legend>Chapter 4: Question 2</legend>
+            <div class="question">
+                <p>Q2. Rewrite this using camelCase. var Nameofband;</p>
+            </div>
+            <div class="answer">
+                <p>Answer 2:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">var nameOfBand;</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 3 -->
+        <fieldset>
+            <legend>Chapter 4: Question 3</legend>
+            <div class="question">
+                <p>Q3. In a single statement declare a legally-named variable and assign a number to it.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 3:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">let myNumber = 25; // Declaring a variable named myNumber and assigning the number 25 to it</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 4 -->
+        <fieldset>
+            <legend>Chapter 4: Question 4</legend>
+            <div class="question">
+                <p>Q4. Declare a variable that is a combination of your first and last names. Use camelCase.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 4:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">let johnDoe = "JohnDoe";</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 5 -->
+        <fieldset>
+            <legend>Chapter 4: Question 5</legend>
+            <div class="question">
+                <p>Q5. List the legal and Illegal Variables.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 5:</p>
+                <div class="code-block">
+                    <pre><code class="language-">Legal Variables:
+    • A variable name must start with a letter, underscore (_), or dollar sign ($). eg: firstName , _myVariable , $amount
+    • Subsequent characters can be letters, numbers, underscores, or dollar signs. eg: my_variable , another123
+    • Variable names are case-sensitive. eg: myVariable , myvariable | Each name represents a unique variable due to the case sensitivity.
+
+Illegal Variables:
+    • Cannot start with a number. eg: 123variable
+    • Cannot contain spaces or special characters (except underscore or dollar sign). eg: my variable (contains a space) , my-variable (contains a hyphen) , !illegal (contains a special character)</code></pre>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <hr>
+
+    <!-- Chapter 5 -->
+    <div class="chapter">
+        <h1>Chapter 5: Math Expression I</h1>
+
+        <!-- Question 1 -->
+        <fieldset>
+            <legend>Chapter 5: Question 1</legend>
+            <div class="question">
+                <p>Q1. What is the name and symbol of the arithmetic operator that gives you the remainder when one
+                    number is divided by another?</p>
+            </div>
+            <div class="answer">
+                <p>Answer 1:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">// The arithmetic operator that gives you the remainder when one number is divided by another is called the "modulo" operator.
+// The symbol for the modulo operator is the percent sign (%).
+// For example:
+7 % 3 // would give a result of 1 because 7 divided by 3 gives a quotient of 2 with a remainder of 1.</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 2 -->
+        <fieldset>
+            <legend>Chapter 5: Question 2</legend>
+            <div class="question">
+                <p>Q2. What is the value of num? var num = 20 % 6;</p>
+            </div>
+            <div class="answer">
+                <p>Answer 2:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">var num = 20 % 6; // The value of num is 2 (remainder of 20 divided by 6)</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 3 -->
+        <fieldset>
+            <legend>Chapter 5: Question 3</legend>
+            <div class="question">
+                <p>Q3. In a single statement, declare the variable largeNum and assign it the result of 1,000 multiplied
+                    by 2,000.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 3:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">let largeNum = 1000 * 2000;</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 4 -->
+        <fieldset>
+            <legend>Chapter 5: Question 4</legend>
+            <div class="question">
+                <p>Q4. Assign to a variable the value represented by one variable subtracted from the value represented
+                    by another variable.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 4:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">var value1 = 20;
+var value2 = 8;
+var result = value1 - value2;
+
+console.log(result); // Expected output: 12 because 20 - 8 = 12</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 5 -->
+        <fieldset>
+            <legend>Chapter 5: Question 5</legend>
+            <div class="question">
+                <p>Q5. Assign to a variable the remainder when one number is divided by another. The variable hasn't
+                    been declared beforehand. Make up the variable name.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 5:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">var myRemainder = 15 % 7;
+console.log(myRemainder); // Expected output: 1</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 6 -->
+        <fieldset>
+            <legend>Chapter 5: Question 6</legend>
+            <div class="question">
+                <p>Q6. Code an alert that displays the result of a multiplication on 2 numbers.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 6:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">var num1 = 5;
+var num2 = 8;
+var result = num1 * num2;
+
+alert("The result of multiplying " + num1 + " and " + num2 + " is: " + result);
+// Displaying the result using an alert function</code></pre>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <hr>
+
+    <!-- Chapter 6 -->
+    <div class="chapter">
+        <h1>Chapter 6: Math Expression II</h1>
+
+        <!-- Question 1 -->
+        <fieldset>
+            <legend>Chapter 6: Question 1</legend>
+            <div class="question">
+                <p>Q1. Code a short form of x = x + 1; Use either of the two legal expressions.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 1:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">var x = 5;
+x += 1; // This is a shorter form of x = x + 1;
+console.log(x); // Output will be 6</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 2 -->
+        <fieldset>
+            <legend>Chapter 6: Question 2</legend>
+            <div class="question">
+                <p>Q2. If x has a value of 100, what is the fastest way to reduce it to 99 with a math expression?</p>
+            </div>
+            <div class="answer">
+                <p>Answer 2:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">var x = 100;
+x--; // This will decrement the value of x by 1
+console.log(x); // Output will be 99</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 3 -->
+        <fieldset>
+            <legend>Chapter 6: Question 3</legend>
+            <div class="question">
+                <p>Q3. var x = 50; var y = x++; What is the value of y?</p>
+            </div>
+            <div class="answer">
+                <p>Answer 3:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">var x = 50; // Assigns the value 50 to variable x
+var y = x++; // Assigns the current value of x to y and then increments x by 1
+
+// Displaying the values of x and y
+console.log("Value of y: " + y); // Output: Value of y: 50
+console.log("Value of x: " + x); // Output: Value of x: 51
+
+// Explanation of the assignment and increment operation
+// y now holds the initial value of x before the increment
+// x is incremented after assigning its value to y</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 4 -->
+        <fieldset>
+            <legend>Chapter 6: Question 4</legend>
+            <div class="question">
+                <p>Q4. var y = 50; var z = --y; What is the value of z?</p>
+            </div>
+            <div class="answer">
+                <p>Answer 4:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">var y = 50; // Assigns the value 50 to variable y
+var z = --y; // Decrements y by 1 and assigns the decremented value to z
+
+// Displaying the values of y and z
+console.log("Value of z: " + z); // Output: Value of z: 49
+console.log("Value of y: " + y); // Output: Value of y: 49 (as y was decremented by 1)
+
+// Explanation of the decrement operation<br>
+// --y decrements the value of y before assigning it to z</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 5 -->
+        <fieldset>
+            <legend>Chapter 6: Question 5</legend>
+            <div class="question">
+                <p>Q5. In a single statement, decrement num and assign its original value to newNum.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 5:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">var num = 10;
+var newNum = num--;
+
+console.log("Value of newNum: " + newNum); // Output: Value of newNum: 10 (as num's original value is assigned to newNum)
+console.log("Value of num: " + num); // Output: Value of num: 9 (as num was decremented by 1)
+
+// Explanation:
+// In a single statement, newNum is assigned the value of num, and immediately after, num is decremented by 1 using the '--' operator.</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 6 -->
+        <fieldset>
+            <legend>Chapter 6: Question 6</legend>
+            <div class="question">
+                <p>Q6. In a single statement add 1 to a variable and assign its original value to another variable.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 6:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">var originalVar = 10; // Example value for the original variable
+var newVar = originalVar++; // Increment originalVar by 1 and assign its original value to newVar
+
+console.log("Value of newVar: " + newVar); // Output: Value of newVar: 10 (as originalVar's original value is assigned to newVar)
+console.log("Value of originalVar: " + originalVar); // Output: Value of originalVar: 11 (as originalVar was incremented by 1)</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 7 -->
+        <fieldset>
+            <legend>Chapter 6: Question 7</legend>
+            <div class="question">
+                <p>Q7. Assign a number value to a variable. Increment the variable. Display the new value in an alert
+                </p>
+            </div>
+            <div class="answer">
+                <p>Answer 7:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">let numberValue = 5; // Assigning a number value to the variable
+numberValue++; // Incrementing the variable by 1
+
+alert(numberValue); // Displaying the new value in an alert</code></pre>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <hr>
+
+    <!-- Chapter 7 -->
+    <div class="chapter">
+        <h1>Chapter 7: Math Expression III</h1>
+
+        <!-- Question 1 -->
+        <fieldset>
+            <legend>Chapter 7: Question 1</legend>
+            <div class="question">
+                <p>Q1. var calculatedNum = 2 + (2 * 6); What is the value of calculatedNum?</p>
+            </div>
+            <div class="answer">
+                <p>Answer 1:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">var calculatedNum = 2 + (2 * 6); // Calculation
+console.log(calculatedNum); // Output: 14
+
+// Explanation:
+// 2 + (2 * 6)
+// 2 * 6 = 12
+// 2 + 12
+// 2 + 12 = 14</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 2 -->
+        <fieldset>
+            <legend>Chapter 7: Question 2</legend>
+            <div class="question">
+                <p>Q2. var calculatedNum = (2 + 2) * 6; What is the value of calculatedNum?</p>
+            </div>
+            <div class="answer">
+                <p>Answer 2:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">var calculatedNum = (2 + 2) * 6; // Calculation
+console.log(calculatedNum); // Output: 24
+
+// Explanation:
+// (2 + 2) * 6
+// 2 + 2 = 4
+// 4 * 6
+// 4 * 6 = 24</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 3 -->
+        <fieldset>
+            <legend>Chapter 7: Question 3</legend>
+            <div class="question">
+                <p>Q3. var calculatedNum = (2 + 2) * (4 + 2); What is the value of calculatedNum?</p>
+            </div>
+            <div class="answer">
+                <p>Answer 3:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">var calculatedNum = (2 + 2) * (4 + 2); // Calculation
+console.log(calculatedNum); // Output: 24
+
+// Explanation:
+// (2 + 2) * (4 + 2)
+// 2 + 2 = 4
+// 4 + 2 = 6
+// (2 + 2) * (4 + 2) becomes 4 * 6
+// 4 * 6 = 24</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 4 -->
+        <fieldset>
+            <legend>Chapter 7: Question 4</legend>
+            <div class="question">
+                <p>Q4. var calculatedNum = ((2 + 2) * 4) + 2; What is the value of calculatedNum?</p>
+            </div>
+            <div class="answer">
+                <p>Answer 4:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">var calculatedNum = ((2 + 2) * 4) + 2; // Calculation
+console.log(calculatedNum); // Output: 18
+
+// Explanation:
+// ((2 + 2) * 4) + 2
+// 2 + 2 = 4
+// 4 * 4 = 16
+// 16 + 2 = 18</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 5 -->
+        <fieldset>
+            <legend>Chapter 7: Question 5</legend>
+            <div class="question">
+                <p>Q5. Write a statement that assigns to cost the result of 2 + 2 * 4 + 10, clarified with parentheses,
+                    producing 56.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 5:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">2 + 2 * 4 + 10 // Original expression
+
+// To get 56, we need to rearrange it using parentheses:
+(2 + 2) * (4 + 10) // Rearranged expression
+
+// Now, solve this expression to verify if it results in 56:
+(2 + 2) * (4 + 10)
+= 4 * 14
+= 56
+
+var cost = (2 + 2) * (4 + 10);
+console.log(cost); // Output: 56</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 6 -->
+        <fieldset>
+            <legend>Chapter 7: Question 6</legend>
+            <div class="question">
+                <p>Q6. Write a statement that assigns to units the result of 2 + 2 * 4 + 10, clarified with parentheses,
+                    producing 20.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 6:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">2 + 2 * 4 + 10 // Original expression
+
+// To get 20, we need to rearrange it using parentheses:
+2 + (2 * 4) + 10 // Rearranged expression
+
+// Now, solve this expression to verify if it results in 20:
+2 + (2 * 4) + 10
+= 2 + 8 + 10
+= 20
+
+var units = 2 + (2 * 4) + 10;
+console.log(units); // Output: 20</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 7 -->
+        <fieldset>
+            <legend>Chapter 7: Question 7</legend>
+            <div class="question">
+                <p>Q7. Write a statement that assigns to pressure the result of 4 / 2 * 4, clarified with parentheses,
+                    producing 5.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 7:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">4 / 2 * 4 // Original expression
+
+// To get 0.5, we need to rearrange it using parentheses:
+4 / (2 * 4) // Rearranged expression
+
+// Now, solve this expression to verify if it results in 0.5:
+4 / (2 * 4)
+= 2 * 4 = 8
+= 4 / 8 = 0.5
+= 0.5
+
+// Note: The rearranged expression results in 0.5, not 5.
+// Given the structure of the expression, it's not possible to attain the result of 5 using parentheses without altering the expression further.
+
+var pressure = 4 / (2 * 4);
+console.log(pressure); // Output: 0.5</code></pre>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <hr>
+
+    <!-- Chapter 8 -->
+    <div class="chapter">
+        <h1>Chapter 8: Concatenating Text Strings</h1>
+
+        <!-- Question 1 -->
+        <fieldset>
+            <legend>Chapter 8: Question 1</legend>
+            <div class="question">
+                <p>Q1. var num = "2" + "2"; What is the value of num? Include quotation marks.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 1:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">var num = "2" + "2";
+console.log(num); // Output: 22
+
+// Explanation:
+// "2" + "2" = 22 Because the first value is string ('2') and another value is also a string ('2'). So when we try to add a string into another string, JavaScript concatenates the strings instead of adding them.</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 2 -->
+        <fieldset>
+            <legend>Chapter 8: Question 2</legend>
+            <div class="question">
+                <p>Q2. message = ("Hello," + "Dolly"); What is the value of message? (Include the quotation marks.)
+                    Alert the statement</p>
+            </div>
+            <div class="answer">
+                <p>Answer 2:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">let message = ("Hello," + "Dolly");
+                        alert(message); // Output: Hello,Dolly</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 3 -->
+        <fieldset>
+            <legend>Chapter 8: Question 3</legend>
+            <div class="question">
+                <p>Q3. alert("33" + 3); What message displays in the alert box?</p>
+            </div>
+            <div class="answer">
+                <p>Answer 3:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">console.log("33" + 3); // Output: 333
+
+// Explanation:
+// "33" + 3 = 333 Because the first value is a string ('33') and another value is a number (3). So when we try to add a string into a number, JavaScript concatenates it instead of adding them.</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 4 -->
+        <fieldset>
+            <legend>Chapter 8: Question 4</legend>
+            <div class="question">
+                <p>Q4. Write an alert that displays the concatenation of the two parts of "Pakistan Zindabad".</p>
+            </div>
+            <div class="answer">
+                <p>Answer 4:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">// Declaring variables for the two parts of the phrase
+var firstPart = "Pakistan";
+var secondPart = "Zindabad";
+
+alert(`${firstPart} ${secondPart}`); // Using template literals to concatenate the two parts with a space in between</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 5 -->
+        <fieldset>
+            <legend>Chapter 8: Question 5</legend>
+            <div class="question">
+                <p>Q5. Write a statement that assigns to a variable the concatenation of a string with a number.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 5:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">var concatenatedString; // Declaring a variable
+concatenatedString = "Hello " + 123; // Concatenating a string and a number and assigning it to the variable
+console.log(concatenatedString); // Output: Hello 123</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 6 -->
+        <fieldset>
+            <legend>Chapter 8: Question 6</legend>
+            <div class="question">
+                <p>Q6. Assign strings to two variables. Then concatenate them and assign the result to a third variable.
+                </p>
+            </div>
+            <div class="answer">
+                <p>Answer 6:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">// Declaring two variables with strings
+var firstString = "Hello, ";
+var secondString = "world!";
+
+// Concatenating the strings and assigning the result to a third variable
+var concatenatedString = firstString + secondString;
+
+console.log(concatenatedString); // Output: Hello, world!</code></pre>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <hr>
+
+    <!-- Chapter 9 -->
+    <div class="chapter">
+        <h1>Chapter 9: Prompts</h1>
+
+        <!-- Question 1 -->
+        <fieldset>
+            <legend>Chapter 9: Question 1</legend>
+            <div class="question">
+                <p>Q1. Code a prompt with the message "Enter first name". The user's response is assigned to firstName.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 1:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">let firstName = prompt("Enter first name");</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 2 -->
+        <fieldset>
+            <legend>Chapter 9: Question 2</legend>
+            <div class="question">
+                <p>Q2. Code a prompt with the message "Country?" and the default answer "China". The user's response is assigned to country.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 2:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">let country = prompt("Country?", "China");</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 3 -->
+        <fieldset>
+            <legend>Chapter 9: Question 3</legend>
+            <div class="question">
+                <p>Q3. Correct this statement var yourName = prompt(Enter Your Name");</p>
+            </div>
+            <div class="answer">
+                <p>Answer 3:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">var yourName = prompt(Enter Your Name"); // Incorrect statement
+
+var yourName = prompt("Enter Your Name"); // Corrected statement
+// This fixed the missing opening double quote at the beginning of the prompt message.</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 4 -->
+        <fieldset>
+            <legend>Chapter 9: Question 4</legend>
+            <div class="question">
+                <p>Q4. Code a prompt that specifies a string as the message Include a default input.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 4:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">var userInput = prompt("Enter your answer:", "Default Value");</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 5 -->
+        <fieldset>
+            <legend>Chapter 9: Question 5</legend>
+            <div class="question">
+                <p>Q5. Assign strings to two variables. Code a prompt specifying the first variable as the message and the second variable as the default response. Assign the user's response to a third variable.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 5:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">var message = "Enter your answer:"; // Contains the message to display in the prompt.
+var defaultResponse = "Default Value"; // Contains the default value displayed in the prompt.
+
+var userInput = prompt(message, defaultResponse); // Will hold the user's response from the prompt.</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 6 -->
+        <fieldset>
+            <legend>Chapter 9: Question 6</legend>
+            <div class="question">
+                <p>Q6. Display a prompt, including both a message and a default response. Display the user's response in an alert.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 6:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">let userInput = prompt("Enter your answer", "Albert Einstein")
+alert;("Your answer is: " + userInput);</code></pre>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    
+    <hr>
+
+    <!-- Chapter 10 -->
+    <div class="chapter">
+        <h1>Chapter 10: if statments</h1>
+
+        <!-- Question 1 -->
+        <fieldset>
+            <legend>Chapter 10: Question 1</legend>
+            <div class="question">
+                <p>Q1. var city = "Karachi" if (city = "Karachi") { console.log("The City OF Lights") Correct the above statement: lso try this statement by yourself</p>
+            </div>
+            <div class="answer">
+                <p>Answer 1:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">// Given Code
+var city = "Karachi";
+
+// Mistake 1: Using assignment operator (=) instead of comparison operator (===).
+if (city = "Karachi") {
+    console.log("The City OF Lights");
+// Mistake 2: Missing closing curly brace for the 'if' statement.
+
+
+// Corrected Code 
+var city = "Karachi";
+
+// Corrected: Using strict equality comparison operator (===).
+if (city === "Karachi") {
+    console.log("The City OF Lights");
+} // Corrected: Added the missing closing curly brace for the 'if' statement.</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 2 -->
+        <fieldset>
+            <legend>Chapter 10: Question 2</legend>
+            <div class="question">
+                <p>Q2. var city = "Karachi" if (city = "Karachi") { console.log("The City OF Lights") Correct the above statement: lso try this statement by yourself</p>
+            </div>
+            <div class="answer">
+                <p>Answer 2:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">// solve this</code></pre>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    <script src="PrismJs/prism.js"></script>
+</body>
+
+</html>
