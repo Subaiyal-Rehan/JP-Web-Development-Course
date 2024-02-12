@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, #e70cc2, #8600a3, #5703d6);
+    color: white;
+}
+
+.mainContainer {
+    background-color: rgba(0, 0, 0, 0.327);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.inputsContainer input {
+    font-size: 50px;
+    max-width: 260px;
+    background-color: rgba(0, 0, 0, 0.327);
+    color: white;
+    border: 1ps solid white;
+    border-radius: 3px;
+    margin: 0 8px;
+    padding: 0 6px;
+}
+
+.inputsContainer input::placeholder {
+    color: white;
+}
+
+.displayTime {
+    font-size: 100px;
+    background-color: rgba(0, 0, 0, 0.327);
+    min-width: 500px;
+    text-align: center;
+    padding: 0 20px;
+    border-radius: 10px;
+}
+
+.buttonsContainer button {
+    font-size: 40px;
+    margin: 0 10px;
+    padding: 2px 20px;
+    border: 1px solid white;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.219);
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.buttonsContainer button:hover {
+    background-color: black;
+    color: white;
+}
+
+.noteContainer {
+    margin-top: 40px;
+}

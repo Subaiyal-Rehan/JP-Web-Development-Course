@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer by Subaiyal Rehan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="mainContainer">
+        <h1>Set Timer Duration</h1>
+
+        <div class="inputsContainer">
+            <input type="number" oninput="this.value = this.value.replace(/[^0-9]/g, '')" placeholder="Hours"
+                id="hoursInput">
+            <input type="number" oninput="this.value = this.value.replace(/[^0-9]/g, '')" placeholder="Minutes"
+                id="minutesInput">
+            <input type="number" oninput="this.value = this.value.replace(/[^0-9]/g, '')" placeholder="Seconds"
+                id="secondsInput">
+        </div>
+
+        <div class="displayTime">
+            <span id="hoursDisplay">0</span> : <span id="minutesDisplay">0</span> : <span id="secondsDisplay">0</span> :
+            <span id="millisecondsDisplay">0</span>
+        </div>
+
+        <div class="buttonsContainer">
+            <button id="startBtn" onclick="startTimer()">Start</button>
+            <button id="stopBtn" onclick="stopTimer()">Stop</button>
+            <button id="resetBtn" onclick="resetTimer()">Reset</button>
+        </div>
+        <div class="noteContainer">
+            <span>NOTE: You must reload the page after entering the time. And you must start entering the time from
+                right to left (from seconds to hours).</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
