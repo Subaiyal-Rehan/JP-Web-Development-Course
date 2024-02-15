@@ -1,13 +1,32 @@
-let hours = parseInt(hoursInput.value) || 0;
-let minutes = parseInt(minutesInput.value) || 0;
-let seconds = parseInt(secondsInput.value) || 0;
-let milliseconds = 10;
-let hoursDisplay = document.getElementById('hoursDisplay');
-let minutesDisplay = document.getElementById('minutesDisplay');
-let secondsDisplay = document.getElementById('secondsDisplay');
-let millisecondsDisplay = document.getElementById('millisecondsDisplay');
-let startBtn = document.getElementById('startBtn');
-let stopBtn = document.getElementById('stopBtn');
+var hours = 0;
+var minutes = 0;
+var seconds = 0;
+var milliseconds = 0;
+var hoursDisplay = document.getElementById('hoursDisplay');
+var minutesDisplay = document.getElementById('minutesDisplay');
+var secondsDisplay = document.getElementById('secondsDisplay');
+var millisecondsDisplay = document.getElementById('millisecondsDisplay');
+var startBtn = document.getElementById('startBtn');
+var stopBtn = document.getElementById('stopBtn');
+
+function adjustInputValues() {
+    if (seconds >= 60) {
+        var extraMinutes = Math.floor(seconds / 60);
+        seconds %= 60;
+        minutes += extraMinutes;
+    }
+    if (minutes >= 60) {
+        var extraHours = Math.floor(minutes / 60);
+        minutes %= 60;
+        hours += extraHours;
+    }
+}
+
+function updateTimerValues() {
+    hours = parseInt(hoursInput.value) || 0;
+    minutes = parseInt(minutesInput.value) || 0;
+    seconds = parseInt(secondsInput.value) || 0;
+}
 
 function renderTimer() {
     hoursDisplay.innerHTML = hours;
@@ -17,37 +36,38 @@ function renderTimer() {
 }
 
 var interval;
+
 function startTimer() {
+    updateTimerValues();
+    adjustInputValues();
     interval = setInterval(() => {
         milliseconds--;
-        if (milliseconds <= 0) {
+        if (milliseconds < 0) {
             milliseconds = 9;
             seconds--;
-            if (seconds == 0) {
-                seconds = 60;
+            if (seconds < 0) {
+                seconds = 59;
                 minutes--;
-                if (minutes == 0) {
-                    minutes = 60;
+                if (minutes < 0) {
+                    minutes = 59;
                     hours--;
+                    if (hours < 0) {
+                        stopTimer();
+                        alert("Times Up!");
+                        return;
+                    }
                 }
             }
         }
-        if (hours === 0 && minutes === 0 && seconds === 1 && milliseconds === 1) {
-            seconds = 0;
-            milliseconds = 0;
-            clearInterval(interval)
-            setTimeout(() => {
-                alert("Times Up!")
-            }, 50);
-        }
-        renderTimer()
+        console.log(hours, minutes, seconds, milliseconds);
+        renderTimer();
     }, 100);
     startBtn.disabled = true;
     stopBtn.disabled = false;
 }
 
 function stopTimer() {
-    clearInterval(interval)
+    clearInterval(interval);
     startBtn.disabled = false;
     stopBtn.disabled = true;
 }

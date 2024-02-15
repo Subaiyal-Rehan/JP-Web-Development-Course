@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript QnA - By Subaiyal Rehan</title>
+    <link rel="shortcut icon" href="Favicon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="PrismJs/prism.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 5px 30px 0 10px;
+        }
+
+        .starting {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .chapter {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 19px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .chapter>h1 {
+            text-align: center;
+            text-decoration: underline;
+            padding: 5px 0;
+            border-radius: 5px;
+            background-color: #712d0027;
+        }
+
+        .question {
+            margin: 0px 0 5px 30px;
+        }
+
+        .answer {
+            margin-left: 30px;
+            font-style: italic;
+        }
+
+        .answer>p {
+            color: #712d00;
+        }
+
+        .code-block {
+            margin-left: 20px;
+            font-family: 'Courier New', monospace !important;
+            width: 90vw;
+        }
+
+        fieldset {
+            padding: 20px 20px 25px 0px;
+            margin: 15px 20px 20px;
+            background-color: rgb(254, 254, 250);
+        }
+
+        legend {
+            margin-left: 7px;
+        }
+
+        hr {
+            margin: 50px 0;
+            color: rgba(93, 93, 93, 0.488);
+        }
+
+        pre {
+            max-width: 1700px;
+            overflow-x: auto;
+        }
+
+        .toClick {
+            height: 600px !important;
+        }
+
+        .starting>h1 {
+            text-align: center;
+            font-size: 47px;
+            text-decoration: underline;
+            background-color: #712d005d;
+            padding: 10px;
+            border-radius: 60px;
+        }
+
+        .startingP {
+            text-align: center;
+            font-size: 22px;
+            margin: 5px 0;
+        }
+
+        .startOl {
+            font-size: 21px;
+            margin: 5px 0 24px 30px;
+        }
+
+        .PDFContainer {
+            display: grid;
+            grid-template-columns: 6fr 1fr;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: #71300440;
+        }
+
+        .PDFinside {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #712d0027;
+            border-radius: 20px;
+            padding: 20px 0;
+        }
+
+        .startOl {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .startOl a {
+            color: rgb(124, 0, 213);
+            padding: 3px 7px;
+            border-radius: 30px;
+        }
+
+        .startOl li {
+            margin: 10px 0;
+        }
+
+        .startOl a:hover {
+            color: rgb(72, 7, 119);
+            background-color: rgba(0, 0, 0, 0.086);
+        }
+
+        @media screen and (max-width: 1150px) {
+            .code-block {
+                width: 80vw;
+                margin: auto;
+            }
+
+            .PDFContainer {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+            }
+
+            .pdfp {
+                text-align: center;
+                padding: 9px 0;
+            }
+
+            .PDFinside {
+                padding: 7px 0;
+            }
+
+            .startOl {
+                font-size: 18px;
+            }
+        }
+
+        @media screen and (max-width: 580px) {
+            .code-block {
+                width: 75vw;
+            }
+
+            fieldset {
+                overflow: hidden;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="starting">
+        <h1>JavaScript Q&A Collection: Mastering Concepts</h1>
+        <p class="startingP">Welcome to the JavaScript Q&A Collection! This resource is designed to provide practical
+            exercises and solutions to enhance your understanding of JavaScript concepts. Each question is followed by a
+            detailed explanation or code snippet to aid comprehension and application.</p>
+        <hr>
+        <div class="PDFContainer">
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <p class="pdfp" style="font-size: 19px;">Explore the JavaScript Problem Set PDF - a consolidated
+                    collection of
+                    questions,
+                    spanning different JavaScript concepts. Dive into a wide spectrum of topics, from basic loops to
+                    complex
+                    conditional statements, all neatly organized for easy reference. Whether you're just starting or
+                    aiming
+                    to enhance your JavaScript skills, this resource-packed PDF offers a wealth of exercises to amplify
+                    your
+                    understanding.</p>
+            </div>
+            <div class="PDFinside">
+                <p style="text-align: center;">Checkout PDF <br> of chapter 31 - 40 &darr;</p>
+                <a href="31-40.pdf" target="_blank" rel="noopener noreferrer"><img width="100" src="PDF-logo.png"></a>
+            </div>
+        </div><br>
+        <p style="font-size: 23px; font-weight: 600;">Explore the index below to navigate to specific topics:</p>
+        <ol class="startOl">
+            <li><a href="#Chapter31">Chapter 31 - 34 (Date & Time)</a></li>
+            <li><a href="#Chapter35">Chapter 35 - 37 (Functions)</a></li>
+        </ol>
+    </div>
+
+    <!-- Chapter 31 - 34 -->
+    <div id="Chapter31" class="chapter">
+        <h1>Chapter 31 - 34: Date & Time</h1>
+
+        <!-- Question 1 -->
+        <fieldset>
+            <legend>Chapter 31 - 34: Question 1</legend>
+            <div class="question">
+                <p>Q1. Code a statement that creates a new Date object and assigns it to dObj, which hasn't been
+                    declared beforehand.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 1:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">let dObj = new Date();</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 2 -->
+        <fieldset>
+            <legend>Chapter 31 - 34: Question 2</legend>
+            <div class="question">
+                <p>Q2. Code a statement that creates a new Date object, converts it to a string, and assigns the string
+                    to dStr, which hasn't been declared beforehand.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 2:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">let dStr = new Date().toString();</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 3 -->
+        <fieldset>
+            <legend>Chapter 31 - 34: Question 3</legend>
+            <div class="question">
+                <p>Q3. Code a statement that extracts the day of the week from a Date object represented by d and
+                    assigns it to day, which hasn't been declared beforehand.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 3:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">let d = new Date();
+let day = d.getDay();</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 4 -->
+        <fieldset>
+            <legend>Chapter 31 - 34: Question 4</legend>
+            <div class="question">
+                <p>Q4. The day has been extracted from the Date object and assigned to d. The names of the days of the
+                    week have been assigned to the array dayNames. Alert the current day with array index.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 4:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">let d = new Date();
+let dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+let currentDayIndex = d.getDay();
+let currentDayName = dayNames[currentDayIndex];
+
+alert(currentDayName);</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 5 -->
+        <fieldset>
+            <legend>Chapter 31 - 34: Question 5</legend>
+            <div class="question">
+                <p>Q5. Extract all parts of the Date and Time and assign it to the variable which has not been declared
+                    beforehand.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 5:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">let currentDate = new Date();  
+
+let year = currentDate.getFullYear();
+let month = currentDate.getMonth();
+let date = currentDate.getDate();
+let day = currentDate.getDay();
+let hours = currentDate.getHours();
+let minutes = currentDate.getMinutes();
+let seconds = currentDate.getSeconds();
+let seconds = currentDate.getMilliseconds();</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 6 -->
+        <fieldset>
+            <legend>Chapter 31 - 34: Question 6</legend>
+            <div class="question">
+                <p>Q6. Code a statement that creates a Date object for the last day of the last month of 2020 and
+                    assigns it to later, which hasn't been declared beforehand.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 6:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">let later = new Date(2020, 11, 31);</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 7 -->
+        <fieldset>
+            <legend>Chapter 31 - 34: Question 7</legend>
+            <div class="question">
+                <p>Q7. Create a Date object for the second day of the second month of 1992 and assign it to a variable
+                    that hasn't been declared beforehand.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 7:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">let specificDate = new Date(1992, 1, 2);</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 8 -->
+        <fieldset>
+            <legend>Chapter 31 - 34: Question 8</legend>
+            <div class="question">
+                <p>Q8. Code a single statement that displays in an alert the milliseconds that elapsed between the
+                    reference date and the beginning of 1980.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 8:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">alert(new Date().getTime() - new Date(1980, 0, 1).getTime());</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 9 -->
+        <fieldset>
+            <legend>Chapter 31 - 34: Question 9</legend>
+            <div class="question">
+                <p>Q9. How do you change the year of a date in JavaScript?</p>
+            </div>
+            <div class="answer">
+                <p>Answer 9:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">let myDate = new Date();
+myDate.setFullYear(2023);</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 10 -->
+        <fieldset>
+            <legend>Chapter 31 - 34: Question 10</legend>
+            <div class="question">
+                <p>Q10. Write a JavaScript function to change the month of a given date to January.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 10:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">function changeMonthToJanuary(date) {
+    date.setMonth(0); // January = index 0
+    return date; // Returns the modified date
+}
+
+// Example usage:
+var currentDate = new Date(); // Gets the current date
+var dateInJanuary = changeMonthToJanuary(currentDate);
+console.log(dateInJanuary);</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 11 -->
+        <fieldset>
+            <legend>Chapter 31 - 34: Question 11</legend>
+            <div class="question">
+                <p>Q11. What is the method to change the day of the week for a specific date in JavaScript?</p>
+            </div>
+            <div class="answer">
+                <p>Answer 11:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">function changeDayOfWeek(date, newDayOfWeek) {
+    var currentDayOfWeek = date.getDay(); // Get the current day of the week (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
+    var difference = newDayOfWeek - currentDayOfWeek;
+    date.setDate(date.getDate() + difference); // Adds the difference to the current day of the month
+    return date;
+}
+
+// Example usage:
+var currentDate = new Date();
+var newDate = changeDayOfWeek(currentDate, 5); // Change the day of the week to Friday (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
+console.log(newDate);</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 12 -->
+        <fieldset>
+            <legend>Chapter 31 - 34: Question 12</legend>
+            <div class="question">
+                <p>Q12. Write a JavaScript function to change the minutes of a given time to a specific value. (Value by
+                    prompt)</p>
+            </div>
+            <div class="answer">
+                <p>Answer 12:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">function changeMinutesToSpecificValue(time) {
+    // Split the time string into hours and minutes components
+    const timeComponents = time.split(':');
+    const hoursStr = timeComponents[0]; // Extract hours component
+    const minutesStr = timeComponents[1]; // Extract minutes component
+
+    // Ask the user for the specific minutes value
+    const specificMinutes = parseInt(prompt("Enter the specific minutes value:"));
+
+    // Update the minutes component of the time
+    const newTime = hoursStr + ':' + specificMinutes.toString().padStart(2, '0');
+
+    return newTime;
+}
+
+// Example usage:
+const givenTime = '10:30'; // Assuming the given time is in the format 'HH:MM'
+const newTime = changeMinutesToSpecificValue(givenTime);
+console.log("New time:", newTime);</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 13 -->
+        <fieldset>
+            <legend>Chapter 31 - 34: Question 13</legend>
+            <div class="question">
+                <p>Q13. Write a JavaScript function to add a specific number of hours to a given time.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 13:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">function addHoursToTime(time, hoursToAdd) {
+    // Split the time string into hours and minutes components
+    const [hoursStr, minutesStr] = time.split(':');
+
+    // Convert the components to numbers
+    let hours = parseInt(hoursStr);
+    let minutes = parseInt(minutesStr);
+
+    // Add the specified number of hours
+    hours += hoursToAdd;
+
+    // Handle cases where hours exceed 24
+    if (hours >= 24) {
+        hours %= 24; // Rolls over to the next day
+    }
+
+    // Format the updated time string
+    const updatedHoursStr = hours.toString().padStart(2, '0');
+    const updatedTime = updatedHoursStr + ':' + minutes;
+
+    return updatedTime;
+}
+
+// Example usage:
+const initialTime = '08:30'; // Given time
+const hoursToAdd = 3; // Number of hours to add
+const updatedTime = addHoursToTime(initialTime, hoursToAdd);
+console.log("Updated time:", updatedTime);</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 14 -->
+        <fieldset>
+            <legend>Chapter 31 - 34: Question 14</legend>
+            <div class="question">
+                <p>Q14. You have to create a age calculator in JavaScript.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 14:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">function calculateAge(birthDateString) {    
+    var currentDate = new Date();
+    var birthDate = new Date(birthDateString);
+
+    var yearsDifference = currentDate.getFullYear() - birthDate.getFullYear();
+    var monthsDifference = currentDate.getMonth() - birthDate.getMonth();
+    var daysDifference = currentDate.getDate() - birthDate.getDate();
+
+    // Adjust months and years if daysDifference is negative
+    if (daysDifference < 0) {
+        monthsDifference--;
+        var lastMonth = new Date(currentDate.getFullYear(), currentDate.getMonth() - 1, 0);
+        daysDifference = lastMonth.getDate() + daysDifference; // Add days of last month to the negative value
+    }
+
+    // Adjust months and years if monthsDifference is negative
+    if (monthsDifference < 0) {
+        yearsDifference--;
+        monthsDifference = 12 + monthsDifference; // Add 12 to the negative value to get positive months difference
+    }
+
+    console.log("Years:", yearsDifference, "Months:", monthsDifference, "Days:", daysDifference);
+}
+
+// Example usage
+calculateAge("1990-05-15"); // Output depends on the current date</code></pre>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <hr>
+
+    <!-- Chapter 35 - 37 -->
+    <div id="Chapter35" class="chapter">
+        <h1>Chapter 35 - 37: Functions</h1>
+
+        <!-- Question 1 -->
+        <fieldset>
+            <legend>Chapter 35 - 37: Question 1</legend>
+            <div class="question">
+                <p>Q1. Code the first line of a function displayAlert.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 1:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">function displayAlert() {}</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 2 -->
+        <fieldset>
+            <legend>Chapter 35 - 37: Question 2</legend>
+            <div class="question">
+                <p>Q2. Code a function named askName that prompts the user to "Enter name" and assigns the answer to
+                    userName, which hasn't been declared beforehand.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 2:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">function askName() {
+    var userName = prompt("Enter name");
+    return userName;
+}</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 3 -->
+        <fieldset>
+            <legend>Chapter 35 - 37: Question 3</legend>
+            <div class="question">
+                <p>Q3. Code a function that calls 2 other functions.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 3:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">function callTwoFunctions() {
+    function1();
+    function2();
+}</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 5 -->
+        <fieldset>
+            <legend>Chapter 35 - 37: Question 5</legend>
+            <div class="question">
+                <p>Q5. Code a function that displays a prompt, "Enter name" and then displays the name in an alert. Call
+                    the function.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 5:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">function displayName() {
+    var name = prompt("Enter name");
+    alert("Hello, " + name + "!");
+}
+
+// Calling the function
+displayName();</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 6 -->
+        <fieldset>
+            <legend>Chapter 35 - 37: Question 6</legend>
+            <div class="question">
+                <p>Q6. Code a function that has 2 parameters. Concatenate them and assign the result to a variable that
+                    hasn't been declared beforehand.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 6:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">function concatenateStrings(string1, string2) {
+    var concatenatedResult = string1 + string2;
+    return concatenatedResult;
+}
+
+// Example usage
+var result = concatenateStrings("Hello", "World");
+console.log(result); // Output: HelloWorld</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 7 -->
+        <fieldset>
+            <legend>Chapter 35 - 37: Question 7</legend>
+            <div class="question">
+                <p>Q7. Code a function that has three parameters. Multiply them and assign them to a variable that
+                    hasn't been declared yet.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 7:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">function multiplyNumbers(num1, num2, num3) {
+    var multipliedResult = num1 * num2 * num3;
+    return multipliedResult;
+}
+
+// Example usage
+var result = multiplyNumbers(2, 3, 4);
+console.log(result); // Output: 24</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 8 -->
+        <fieldset>
+            <legend>Chapter 35 - 37: Question 8</legend>
+            <div class="question">
+                <p>Q8. Write a JavaScript function that takes an array of numbers as input and returns the average of
+                    those numbers.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 8:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">function calculateAverage(numbers) {
+    // Checks if the array is empty
+    if (numbers.length === 0) {
+        return 0; // Return 0 if the array is empty to avoid division by zero
+    }
+
+    // Calculate the sum of all numbers in the array
+    var sum = numbers.reduce(function (value1, value2) {
+        return value1 + value2;
+    }, 0);
+
+    // Calculate the average by dividing the sum by the number of elements in the array
+    var average = sum / numbers.length;
+    
+    return average;
+}
+
+// Example usage
+var numbers = [10, 20, 30, 40, 50];
+var average = calculateAverage(numbers);
+console.log("Average:", average); // Output: Average: 30</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 9 -->
+        <fieldset>
+            <legend>Chapter 35 - 37: Question 9</legend>
+            <div class="question">
+                <p>Q9. Write a JavaScript function that takes two parameters and returns their sum.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 9:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">function sum(a, b) {
+    return a + b;
+}
+
+// Example usage:
+const result = sum(3, 4);
+console.log(result); // Output: 7</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 10 -->
+        <fieldset>
+            <legend>Chapter 35 - 37: Question 10</legend>
+            <div class="question">
+                <p>Q10. Write a JavaScript function that takes an array of numbers as input and returns the average of
+                    those numbers.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 10:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">function calculateAverage(numbers) {
+    // Check if the array is empty
+    if (numbers.length === 0) {
+        return 0; // Return 0 if the array is empty to avoid division by zero
+    }
+
+    // Calculate the sum of all numbers in the array using reduce method
+    const sum = numbers.reduce(function (value1, value2) {
+        return value1 + value2;
+    }, 0);
+
+    // Calculate the average by dividing the sum by the number of elements in the array
+    const average = sum / numbers.length;
+    
+    return average; // Return the average
+}
+
+// Example usage:
+const numbers = [1, 2, 3, 4, 5];
+const average = calculateAverage(numbers);
+console.log(average); // Output: 3</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 11 -->
+        <fieldset>
+            <legend>Chapter 35 - 37: Question 11</legend>
+            <div class="question">
+                <p>Q11. You have to capture the returned value from a function and store it in a variable?</p>
+            </div>
+            <div class="answer">
+                <p>Answer 11:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">// Define a function that returns a value
+function multiply(a, b) {
+    return a * b;
+}
+
+// Call the function and capture the returned value in a variable
+const result = multiply(5, 10);
+
+// Now the variable "result" holds the returned value
+console.log(result); // Output: 50</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 12 -->
+        <fieldset>
+            <legend>Chapter 35 - 37: Question 12</legend>
+            <div class="question">
+                <p>Q12. Solve question 12</p>
+            </div>
+            <div class="answer">
+                <p>Answer 12:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">solve this</code></pre>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    <script src="PrismJs/prism.js"></script>
+</body>
+
+</html>
