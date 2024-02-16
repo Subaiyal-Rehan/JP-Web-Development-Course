@@ -209,6 +209,8 @@
         <ol class="startOl">
             <li><a href="#Chapter31">Chapter 31 - 34 (Date & Time)</a></li>
             <li><a href="#Chapter35">Chapter 35 - 37 (Functions)</a></li>
+            <li><a href="#Chapter38">Chapter 38 (Local vs Global Variables)</a></li>
+            <li><a href="#Chapter39">Chapter 39 - 40 (Switch Statements)</a></li>
         </ol>
     </div>
 
@@ -593,7 +595,7 @@ calculateAge("1990-05-15"); // Output depends on the current date</code></pre>
                 <div class="code-block">
                     <pre><code class="language-js">function displayName() {
     var name = prompt("Enter name");
-    alert("Hello, " + name + "!");
+    alert("Assalam-U-Alaikum, " + name + "!");
 }
 
 // Calling the function
@@ -763,12 +765,383 @@ console.log(result); // Output: 50</code></pre>
         <fieldset>
             <legend>Chapter 35 - 37: Question 12</legend>
             <div class="question">
-                <p>Q12. Solve question 12</p>
+                <p>Q12. Write a function which tells letter counts of (word).</p>
             </div>
             <div class="answer">
                 <p>Answer 12:</p>
                 <div class="code-block">
-                    <pre><code class="language-js">solve this</code></pre>
+                    <pre><code class="language-js">function letterCounts(word) {
+    var wordLength = word.length;
+    return wordLength;
+}
+
+// Example usage:
+let word = "Hello World";
+console.log(letterCounts(word)); // Output: 11</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 13 -->
+        <fieldset>
+            <legend>Chapter 35 - 37: Question 13</legend>
+            <div class="question">
+                <p>Q13. Write a function to set (year) in date object.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 13:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">function setYear(date, year) {
+    date.setFullYear(year);
+    return date;
+}
+
+// Example usage:
+let myDate = new Date();
+console.log("Before setting year:", myDate);
+setYear(myDate, 2020);
+console.log("After setting year:", myDate);</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 14 -->
+        <fieldset>
+            <legend>Chapter 35 - 37: Question 14</legend>
+            <div class="question">
+                <p>Q14. Write a function which tells the age of a person who Born on (dateOfBirth)</p>
+            </div>
+            <div class="answer">
+                <p>Answer 14:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">function calculateAge(dateOfBirth) {
+    var currentDate = new Date();
+    var birthDate = new Date(dateOfBirth);
+
+    var yearsDifference = currentDate.getFullYear() - birthDate.getFullYear();
+    var monthsDifference = currentDate.getMonth() - birthDate.getMonth();
+    var daysDifference = currentDate.getDate() - birthDate.getDate();
+
+    // Adjust months and years if daysDifference is negative
+    if (daysDifference < 0) {
+        monthsDifference--;
+        var lastMonth = new Date(currentDate.getFullYear(), currentDate.getMonth() - 1, 0);
+        daysDifference = lastMonth.getDate() + daysDifference; // Add days of last month to the negative value
+    }
+
+    // Adjust months and years if monthsDifference is negative
+    if (monthsDifference < 0) {
+        yearsDifference--;
+        monthsDifference = 12 + monthsDifference; // Add 12 to the negative value to get positive months difference
+    }
+
+    console.log("Years:", yearsDifference, "Months:", monthsDifference, "Days:", daysDifference);
+}
+
+// Example usage
+calculateAge("2000-01-20"); // Output depends on the current date</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 15 -->
+        <fieldset>
+            <legend>Chapter 35 - 37: Question 15</legend>
+            <div class="question">
+                <p>Q15. Write a function which tells the presense of (word) in an array =
+                    ['zaid','haris','raza','abubakar','hassan','hussain','fatima'] result should be in true or false</p>
+            </div>
+            <div class="answer">
+                <p>Answer 15:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">// Method using Array.includes()
+function checkWordPresence(word) {
+    var namesArray = ['zaid','haris','raza','abubakar','hassan','hussain','fatima'];
+    return namesArray.includes(word);
+}
+
+// Method using a loop
+function checkWordPresenceLoop(word) {
+    var namesArray = ['zaid','haris','raza','abubakar','hassan','hussain','fatima'];
+    for (var i = 0; i < namesArray.length; i++) {
+        if (namesArray[i] === word) {
+            return true;
+        }
+    }
+    return false;
+}
+
+// Example usage
+console.log(checkWordPresence('raza')); // Output: true
+console.log(checkWordPresence('ali'));  // Output: false
+
+console.log(checkWordPresenceLoop('raza')); // Output: true
+console.log(checkWordPresenceLoop('ali'));  // Output: false</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 16 -->
+        <fieldset>
+            <legend>Chapter 35 - 37: Question 16</legend>
+            <div class="question">
+                <p>Q16. Write a function which repeat (letter) 10 times. Hint: "abcde" str.repeat(10)</p>
+            </div>
+            <div class="answer">
+                <p>Answer 16:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">function repeatLetter(letter) {
+    return letter.repeat(10);
+}
+
+// Example usage
+console.log(repeatLetter('a')); // Output: 'aaaaaaaaaa'
+console.log(repeatLetter('b')); // Output: 'bbbbbbbbbb'</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 17 -->
+        <fieldset>
+            <legend>Chapter 35 - 37: Question 17</legend>
+            <div class="question">
+                <p>Q17. write a function which reverse array = ['a','b','c','d','e'] Hint: arr.reverse()</p>
+            </div>
+            <div class="answer">
+                <p>Answer 17:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">function reverseArray(arr) {
+    return arr.reverse();
+}
+
+// Example usage
+var arr = ['a', 'b', 'c', 'd', 'e']
+console.log(reverseArray(arr)); // Output: ['e', 'd', 'c', 'b', 'a']</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 18 -->
+        <fieldset>
+            <legend>Chapter 35 - 37: Question 18</legend>
+            <div class="question">
+                <p>Q18. write a function which reverse array = ['a','b','c','d','e'] Hint: arr.reverse()</p>
+            </div>
+            <div class="answer">
+                <p>Answer 18:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">function reverseNumber(num) {
+    const reversedNum = parseFloat(num.toString().split('').reverse().join(''));
+    return reversedNum;
+}
+
+// Example usage
+const x = 32243;
+console.log(reverseNumber(x)); // Output: 34223</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 19 -->
+        <fieldset>
+            <legend>Chapter 35 - 37: Question 19</legend>
+            <div class="question">
+                <p>Q19. Write a JavaScript function that checks whether a passed string is a palindrome or not? Hint: A
+                    palindrome is word, phrase, or sequence that reads the same backward as forward, e.g., madam or Wow.
+                </p>
+            </div>
+            <div class="answer">
+                <p>Answer 19:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">function checkPalindrome(str) {
+    var result = str.toLowerCase().split('').reverse().join('');
+    if (str.toLowerCase() == result) {
+        return str + ' is a Palindrom word';
+    } else {
+        return str + ' is not a Palindrom word';
+    }
+}
+
+// Example usage
+const x = "madam";
+console.log(checkPalindrome(x));
+console.log(checkPalindrome("Hello"));</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 20 -->
+        <fieldset>
+            <legend>Chapter 35 - 37: Question 20</legend>
+            <div class="question">
+                <p>Q20. Write a JavaScript function that accepts a string as a parameter and converts the first letter
+                    of each word into upper case. Example string : 'the quick brown fox' Expected Output : 'The Quick
+                    Brown Fox '</p>
+            </div>
+            <div class="answer">
+                <p>Answer 20:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">function capitalizeFirstLetter(str) {
+    var words = str.split(' ');
+
+    for (var i = 0; i < words.length; i++) {
+        // Capitalize the first letter of each word
+        words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    }
+
+    return words.join(' ');
+}
+
+// Example usage
+var inputString = 'the quick brown fox';
+var outputString = capitalizeFirstLetter(inputString);
+console.log(outputString); // Output: 'The Quick Brown Fox'</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 21 -->
+        <fieldset>
+            <legend>Chapter 35 - 37: Question 21</legend>
+            <div class="question">
+                <p>Q21. Write a JavaScript function that takes an array of numbers and finds the lowest and greatest
+                    numbers, respectively. Sample array : [1,2,3,4,5] Expected Output : 1,5</p>
+            </div>
+            <div class="answer">
+                <p>Answer 21:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">function findMinMax(numbers) {
+    // Find the lowest and greatest numbers using Math.min and Math.max
+    var lowest = Math.min(...numbers);
+    var greatest = Math.max(...numbers);
+    
+    // Return the lowest and greatest numbers as a string
+    return `${lowest},${greatest}`;
+}
+
+// Example usage
+var numbersArray = [1, 2, 3, 4, 5];
+var result = findMinMax(numbersArray);
+console.log(result); // Output: 1,5</code></pre>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <hr>
+
+    <!-- Chapter 38 -->
+    <div id="Chapter38" class="chapter">
+        <h1>Chapter 38: Local vs Global Variables</h1>
+
+        <!-- Question 1 -->
+        <fieldset>
+            <legend>Chapter 38: Question 1</legend>
+            <div class="question">
+                <p>Q1. Write a JavaScript function that demonstrates the usage of a local variable.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 1:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">function greet() {
+    // This is a local variable
+    var message = "Assalam-U-Alaikum!";
+    console.log(message);
+}
+
+// When you call the function
+greet(); // Output: Assalam-U-Alaikum!
+
+// If you try to access the message variable outside the function, it won't work
+console.log(message); // Error: message is not defined</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 2 -->
+        <fieldset>
+            <legend>Chapter 38: Question 2</legend>
+            <div class="question">
+                <p>Q2. Write a JavaScript function that demonstrates the usage of a local variable.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 2:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">var globalVar = "I'm a global variable";
+
+// Function that accesses the global variable
+function accessGlobal() {
+    console.log(globalVar);
+}
+
+// Calling the function
+accessGlobal(); // Output: I'm a global variable</code></pre>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <hr>
+
+    <!-- Chapter 39 -->
+    <div id="Chapter39" class="chapter">
+        <h1>Chapter 39 - 40: Switch Statements</h1>
+
+        <!-- Question 1 -->
+        <fieldset>
+            <legend>Chapter 39: Question 1</legend>
+            <div class="question">
+                <p>Q1. Write a JavaScript switch statement that checks the value of a variable and performs different
+                    actions based on different cases.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 1:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">// Defining a variable
+var color = "red";
+
+// Switch statement to perform different actions based on the value of the variable
+switch (color) {
+    case "red":
+        console.log("The color is red.");
+        break;
+    case "blue":
+        console.log("The color is blue.");
+        break;
+    case "green":
+        console.log("The color is green.");
+        break;
+    default:
+        console.log("The color is not red, blue, or green.");
+}</code></pre>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Question 2 -->
+        <fieldset>
+            <legend>Chapter 39: Question 2</legend>
+            <div class="question">
+                <p>Q2. Write a JavaScript switch statement that check whether cityName given by user check the cityName
+                    if match alert the user and break the statement, if not default message will be shown to user.</p>
+            </div>
+            <div class="answer">
+                <p>Answer 2:</p>
+                <div class="code-block">
+                    <pre><code class="language-js">// Assuming the user's cityName is stored in a variable called userCityName
+var userCityName = prompt("Enter your city name:");
+
+// Variable containing cityName for comparison
+var cityName = "New York";
+
+// Switch statement to check if userCityName matches cityName
+switch (userCityName) {
+    case cityName:
+        alert("Your city matches the predefined city!");
+        break;
+    default:
+        alert("Your city didn't match the predefined city.");
+}</code></pre>
                 </div>
             </div>
         </fieldset>
