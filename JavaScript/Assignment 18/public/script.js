@@ -78,6 +78,8 @@ function createElem() {
     var buttonTxt = document.createTextNode('Delete');
     button.appendChild(buttonTxt);
     div2.appendChild(button);
+
+    input.value = "";
 }
 
 function del(elem) {
