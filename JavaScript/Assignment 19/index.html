@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz APP by Subaiyal Rehan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="mainContainer">
+        <h1 id="mainHeading">Quiz App</h1>
+
+        <div class="scoreIndex">
+            <h2>MCQs</h2><span class="scoreSpan">Score: <span id="marks">1</span> / <span id="marksEnd">0</span></span>
+        </div>
+
+        <div class="questionContainer">
+            <span id="question"></span>
+        </div>
+
+        <div class="answersBtnContainer" id="answersBtnContainer"></div>
+
+        <div class="quizFooter">
+            <span><span id="starting">1</span> of <span id="ending">0</span> Questions</span>
+            <button onclick="next()" id="nextBtn">Next</button>
+        </div>
+    </div>
+
+    <div class="resultContainer">
+        <h2>Quiz Result!</h2>
+        <div class="marksContainer">
+            <div id="percentContainer" class="percentContainer">
+                <span id="percentSpan">0%</span>
+            </div>
+
+            <span id="resultMarksSpan">Your Score is: <span id="resultMarks">0</span> out of <span
+                    id="resultMarksEnd">0</span></span>
+            <div class="resultButtonContainer">
+                <button onclick="tryAgain()">Try Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

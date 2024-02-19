@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #09001b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.mainContainer {
+    background-color: transparent;
+    width: 650px;
+    border: 2px solid #c40094;
+    border-radius: 6px;
+    padding: 20px 30px;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+}
+
+#mainHeading {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 20px;
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+    background: linear-gradient(to right, transparent, #c40094, transparent);
+}
+
+.scoreIndex {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    border-bottom: 2px solid #950170;
+    margin-bottom: 30px;
+}
+
+.scoreSpan {
+    font-size: 20px;
+    background-color: #c40094;
+    padding: 7px;
+    border-radius: 3px;
+}
+
+.scoreIndex h2 {
+    font-weight: 400;
+    text-align: center;
+    font-size: 27px;
+}
+
+.questionContainer {
+    background-color: rgba(0, 0, 0, 0.377);
+}
+
+.questionContainer span {
+    font-size: 32px;
+}
+
+.answersBtnContainer {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.answersBtnContainer button {
+    color: white;
+    font-size: 23px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+.answersBtnContainer button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.435);
+}
+
+.quizFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #950170;
+    padding-top: 20px;
+    margin-top: 30px;
+}
+
+.quizFooter span {
+    font-size: 18px;
+}
+
+.quizFooter button {
+    color: white;
+    font-size: 17px;
+    padding: 8px 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    cursor: pointer;
+    pointer-events: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.quizFooter button:hover {
+    border: 2px solid #ffffff;
+}
+
+#answersBtnContainer .correct {
+    border: 2px solid #00a63d;
+    color: #00a63d;
+}
+
+#answersBtnContainer .wrong {
+    border: 2px solid #a60045;
+    color: #a60045;
+}
+
+#answersBtnContainer .disabled {
+    pointer-events: none;
+}
+
+.resultContainer {
+    display: none;
+    transform: scale(0);
+    width: 500px;
+    background-color: transparent;
+    border: 2px solid #c40094;
+    border-radius: 6px;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.resultContainer h2 {
+    font-size: 60px;
+}
+
+.marksContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 40px;
+}
+
+.percentContainer {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: conic-gradient(#c40094, 3.6deg, rgba(255, 255, 255, 0.1) 0deg);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.percentContainer::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #09001b;
+    border-radius: 50%;
+}
+
+#percentSpan {
+    position: relative;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+#resultMarksSpan {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.resultButtonContainer button {
+    margin-top: 10px;
+    color: white;
+    padding: 15px 40px;
+    font-size: 19px;
+    background-color: #c40094;
+    border: 2px solid #c40094;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.resultButtonContainer button:hover {
+    background-color: #950170;
+    border: 2px solid #950170;
+}
