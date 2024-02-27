@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RegisterEase</title>
+  <link rel="shortcut icon" href="Logo.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="d-flex justify-content-between bg-dark-subtle p-3 border-bottom border-black border-opacity-25">
+    <div class="Logo fs-1">
+      <img class="img-fluid" width="55" src="Logo.png">
+      RegisterEase
+    </div>
+    <div class="d-flex justify-content-between gap-3">
+      <input class="border border-black border-opacity-50 rounded-3 px-2 fs-5" type="search"
+        placeholder="Find Form by ID" id="searchIdInput">
+      <button onclick="searchID()" class="btn btn-success rounded-3">Search</button>
+    </div>
+  </div>
+
+  <div id="mainContainer">
+    <h1 class="text-center fw-semibold display-4 mb-0 mb-0 mt-5">Fill the Registeration Form below</h1>
+    <div class="container p-4 mt-4 mb-4 bg-dark-subtle border rounded-3">
+      <form id="mainForm" action="">
+        <!-- Full Name, Father Name -->
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <p class="m-1">Full Name:</p>
+            <input type="text" required class="form-control" placeholder="Full name" aria-label="First name"
+              id="fullName">
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <p class="m-1">Father Name:</p>
+            <input type="text" required class="form-control" placeholder="Father name" aria-label="Last name"
+              id="fatherName">
+          </div>
+        </div>
+
+        <!-- City, Courses or Events -->
+        <div class="row mt-4">
+          <div class="col-sm-12 col-md-6">
+            <p class="m-1">Select City</p>
+            <div class="form-floating">
+              <select required class="form-select" aria-label="Floating label select example" id="selectCity">
+                <option value="Clifton" selected>Clifton</option>
+                <option value="Defence (DHA)">Defence (DHA)</option>
+                <option value="Gulshan-e-Iqbal">Gulshan-e-Iqbal</option>
+                <option value="North Nazimabad">North Nazimabad</option>
+                <option value="Saddar">Saddar</option>
+                <option value="Malir">Malir</option>
+                <option value="Gulistan-e-Johar">Gulistan-e-Johar</option>
+                <option value="Korangi">Korangi</option>
+                <option value="Landhi">Landhi</option>
+                <option value="Liaquatabad">Liaquatabad</option>
+                <option value="Shah Faisal Town">Shah Faisal Town</option>
+                <option value="Gulshan-e-Maymar">Gulshan-e-Maymar</option>
+                <option value="Gulshan-e-Hadeed">Gulshan-e-Hadeed</option>
+                <option value="Orangi Town">Orangi Town</option>
+                <option value="Karachi Cantt (Cantonment)">Karachi Cantt (Cantonment)</option>
+                <option value="Baldia Town">Baldia Town</option>
+                <option value="Lyari">Lyari</option>
+                <option value="Kemari">Kemari</option>
+                <option value="Surjani Town">Surjani Town</option>
+                <option value="Bin Qasim Town">Bin Qasim Town</option>
+                <option value="Other">Other</option>
+              </select>
+              <label for="selectCity">Select City</label>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <p class="m-1">Select Courses or Events</p>
+            <div class="form-floating">
+              <select required class="form-select" id="selectCourses" aria-label="Floating label select example">
+                <option value="Web Development Fundamentals" selected>Web Development Fundamentals</option>
+                <option value="HTML5 and CSS3 Essentials">HTML5 and CSS3 Essentials</option>
+                <option value="Introduction to Programming with JavaScript">Introduction to Programming with JavaScript
+                </option>
+                <option value="Responsive Web Design">Responsive Web Design</option>
+                <option value="JavaScript for Beginners">JavaScript for Beginners</option>
+                <option value="React.js Essentials">React.js Essentials</option>
+                <option value="Node.js and Express.js Basics">Node.js and Express.js Basics</option>
+                <option value="Full-Stack Web Development Bootcamp">Full-Stack Web Development Bootcamp</option>
+                <option value="Frontend Development with Angular">Frontend Development with Angular</option>
+                <option value="Python Programming Basics">Python Programming Basics</option>
+                <option value="UI/UX Design Principles">UI/UX Design Principles</option>
+                <option value="Hackathon: Build the Next Big Thing">Hackathon: Build the Next Big Thing</option>
+                <option value="Webinar: Future of Artificial Intelligence">Webinar: Future of Artificial Intelligence
+                </option>
+                <option value="Product Management Masterclass">Product Management Masterclass</option>
+                <option value="UX Design Seminar">UX Design Seminar</option>
+              </select>
+              <label for="selectCourses">Select Courses or Events</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Email, Phone Number -->
+        <div class="row mt-4">
+          <div class="col-sm-12 col-md-6">
+            <p class="m-1">Email</p>
+            <input type="email" required class="form-control" id="EmailAddress"
+              placeholder="Enter Your Email: name@example.com">
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <p class="m-1">Phone Number</p>
+            <input type="number" required class="form-control" id="PhoneNo"
+              oninput="this.value = this.value.replace(/[^0-9]/g, '')" placeholder="Enter Your Phone Number">
+          </div>
+        </div>
+
+        <!-- CNIC, Father CNIC -->
+        <div class="row mt-4">
+          <div class="col-sm-12 col-md-6">
+            <p class="m-1">CNIC</p>
+            <input type="text" required class="form-control" placeholder="CNIC"
+              oninput="this.value = this.value.replace(/[^0-9-]/g, '')" id="CNIC">
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <p class="m-1">Father's CNIC (Optional)</p>
+            <input type="text" class="form-control" placeholder="Father's CNIC"
+              oninput="this.value = this.value.replace(/[^0-9-]/g, '')" id="fatherCNIC">
+          </div>
+        </div>
+
+        <!-- Date of Birth, Gender -->
+        <div class="row mt-4">
+          <div class="col-sm-12 col-md-6">
+            <p class="m-1">Date of Birth</p>
+            <input style="height: 59px;" type="date" required class="form-control" id="dateOfBirth">
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <p class="m-1">Select Gender</p>
+            <div class="form-floating">
+              <select required class="form-select" id="selectGender" aria-label="Floating label select example">
+                <option value="Male" selected>Male</option>
+                <option value="Female">Female</option>
+              </select>
+              <label for="selectGender">Select Gender</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Address -->
+        <div class="mt-4">
+          <p class="m-1">Address</p>
+          <textarea class="form-control" placeholder="Enter Your Address" id="Address" rows="2"></textarea>
+        </div>
+
+        <!-- Last qualification -->
+        <div class="row mt-4">
+          <div class="col">
+            <p class="m-1">Last qualification</p>
+            <input type="text" placeholder="Last Qualification" required class="form-control py-2" id="qualification">
+          </div>
+        </div>
+
+        <!-- Laptop -->
+        <div class="row mt-4">
+          <div class="col">
+            <p class="m-1">Do You Have a Laptop?</p>
+            <input type="text" placeholder="Do You Have a Laptop?" required class="form-control py-2" id="laptop">
+          </div>
+        </div>
+
+        <!-- Picture   -->
+        <div class="row mt-4">
+          <div class="col-sm-12 col-md-5">
+            <label for="picture" class="form-label">Picture</label>
+            <input class="form-control" required type="file" accept=".jpg, .jpeg, .png" id="picture">
+          </div>
+          <div class="col-sm-12 col-md-7">
+            <ul>
+              <li>The picture should have a background that is either white or blue.</li>
+              <li>File must be less than 1MB.</li>
+              <li>File type: jpg, jpeg, png</li>
+              <li>Upload your recent passport size picture.</li>
+              <li>Your face should be clearly visible without any glasses.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Terms and Conditions -->
+        <div class="col-12 border-top border-black border-opacity-25 pt-4">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">Agree to </label>
+            <label class="form-check-label terms-and-conditions" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              for="invalidCheck">terms and conditions?</label>
+          </div>
+        </div>
+        <p class="mt-3 text-success-emphasis fw-semibold">We won't share your info with anyone.</p>
+
+        <!-- Submit -->
+        <div class="col-12 mt-4 d-grid gap-2">
+          <button class="btn btn-lg btn-success" id="Submit" type="submit" onclick="submitBtn()">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="resultContainer" class="resultContainer displayNone">
+    <h1 class="text-center fw-semibold display-4 mb-0 mb-0 mt-5" id="resulth1"></h1>
+    <div class="container p-4 mt-4 mb-4 bg-success-subtle border rounded-3">
+
+      <!-- Full Name, Father Name -->
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <p class="m-1">Full Name</p>
+          <input type="text" disabled required class="form-control bg-white" aria-label="First name"
+            id="fullNameResult">
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <p class="m-1">Father Name</p>
+          <input type="text" disabled required class="form-control bg-white" aria-label="Last name"
+            id="fatherNameResult">
+        </div>
+      </div>
+
+      <!-- City, Courses or Events -->
+      <div class="row mt-4">
+        <div class="col-sm-12 col-md-6">
+          <p class="m-1">Your City</p>
+          <input type="text" disabled required class="form-control bg-white" aria-label="City" id="selectCityResult">
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <p class="m-1">Selected Course or Event</p>
+          <input type="text" disabled required class="form-control bg-white" aria-label="Course"
+            id="selectCoursesResult">
+        </div>
+      </div>
+
+      <!-- Email, Phone Number -->
+      <div class="row mt-4">
+        <div class="col-sm-12 col-md-6">
+          <p class="m-1">Your Email</p>
+          <input type="email" disabled required class="form-control bg-white" id="EmailAddressResult">
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <p class="m-1">Your Phone Number</p>
+          <input type="text" disabled required class="form-control bg-white" id="PhoneNoResult">
+        </div>
+      </div>
+
+      <!-- CNIC, Father CNIC -->
+      <div class="row mt-4">
+        <div class="col-sm-12 col-md-6">
+          <p class="m-1">CNIC</p>
+          <input type="text" disabled required class="form-control bg-white" id="CNICResult">
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <p class="m-1">Father's CNIC (Optional)</p>
+          <input type="text" disabled class="form-control bg-white" id="fatherCNICResult">
+        </div>
+      </div>
+
+      <!-- Date of Birth, Gender -->
+      <div class="row mt-4">
+        <div class="col-sm-12 col-md-6">
+          <p class="m-1">Your Date of Birth</p>
+          <input disabled type="text" required class="form-control bg-white" id="dateOfBirthResult">
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <p class="m-1">Your Gender</p>
+          <input disabled type="text" required class="form-control bg-white" id="selectGenderResult">
+        </div>
+      </div>
+
+      <!-- Address -->
+      <div class="mt-4">
+        <p class="m-1">Your Address</p>
+        <textarea disabled class="form-control bg-white" id="AddressResult" rows="2"></textarea>
+      </div>
+
+      <!-- Last qualification -->
+      <div class="row mt-4">
+        <div class="col">
+          <p class="m-1">Last qualification</p>
+          <input type="text" disabled required class="form-control py-2 bg-white" id="qualificationResult">
+        </div>
+      </div>
+
+      <!-- Laptop -->
+      <div class="row mt-4">
+        <div class="col">
+          <p class="m-1">Do You Have a Laptop?</p>
+          <input type="text" disabled required class="form-control py-2 bg-white" id="laptopResult">
+        </div>
+      </div>
+
+      <!-- Picture   -->
+      <div class="row my-4 mb-5">
+        <div class="col">
+          <label for="picture" class="form-label">Picture</label>
+          <!-- <input class="form-control bg-white" disabled required type="file" accept=".jpg, .jpeg, .png"
+            id="pictureResult"> -->
+          <input type="text" disabled required class="form-control py-2 bg-white" id="pictureResult">
+        </div>
+      </div>
+
+      <!-- Submit -->
+      <div class="col-12 mt-4 d-grid gap-2">
+        <button class="btn btn-lg btn-success" id="Submit" type="button" onclick="goBackBtn()">Go Back</button>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Terms & Conditions Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-3" id="exampleModalLabel">Terms and Conditions</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ol class="fs-5 d-flex flex-column gap-3">
+            <li><b>Eligibility</b>: By registering for the event or course, you confirm that you meet the
+              eligibility
+              criteria
+              specified for participation. This includes any age, educational, or other requirements as outlined in the
+              event or course details.</li>
+            <li><b>Registration Information</b>: You agree to provide accurate and complete information during the
+              registration process. Any false, misleading, or incomplete information may result in the cancellation of
+              your registration without refund.</li>
+            <li><b>Dress Code for Female Students</b> It is mandatory for female students to adhere to the Islamic dress
+              code by wearing hijab/abaya.</li>
+            <li><b>Payment</b>: Payment for the event or course must be made in full at the time of registration, unless
+              otherwise specified. Payment methods accepted will be clearly communicated during the registration
+              process.</li>
+            <li><b>Cancellation</b> and Refunds: Cancellation requests must be submitted in writing to [email address or
+              contact information]. Refunds will be provided according to the refund policy outlined in the event or
+              course details. Any applicable processing fees or non-refundable deposits will be clearly communicated.
+            </li>
+            <li><b>Attendance</b>: Attendance at all sessions or events included in the course is mandatory, unless
+              otherwise specified. Failure to attend may result in dismissal from the course or event without refund.
+            </li>
+            <li><b>Code of Conduct</b>: Participants are expected to conduct themselves in a professional and respectful
+              manner at all times. Any behavior deemed inappropriate, disruptive, or offensive by the organizers may
+              result in immediate expulsion from the course or event without refund.</li>
+            <li><b>Intellectual Property</b>: All course materials, including but not limited to presentations,
+              handouts, and recordings, are the intellectual property of the organizers and/or the course instructors.
+              Participants
+              agree not to reproduce, distribute, or share these materials without prior written consent.</li>
+            <li><b>Liability</b>: The organizers, instructors, and venue owners are not liable for any loss, injury, or
+              damage to persons or property incurred during the course or event. Participants are responsible for their
+              own
+              safety and well-being at all times.</li>
+            <li><b>Privacy</b>: Personal information collected during the registration process will be handled in
+              accordance with our Privacy Policy. By registering, you consent to the use of your information for
+              event-related
+              communications and administrative purposes.</li>
+            <li><b>Modification of Terms</b>: The organizers reserve the right to modify these Terms and Conditions at
+              any
+              time, without prior notice. Any changes will be effective immediately upon posting on our website or other
+              relevant channels.</li>
+          </ol>
+          <ul>
+            <h3 class="fs-5 mt-4 fw-semibold">By registering for the event or course, you acknowledge that you have
+              read,
+              understood,
+              and agree to abide
+              by these Terms and Conditions.</h3>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ID, submit succes Modal -->
+  <div class="modal fade" id="submitModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-3 text-center text-success" id="exampleModalLabel">Data has been Submitted
+            Successfully <i class="bi bi-check-circle-fill"></i></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body fs-5" id="IdModal">
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="main.js" type="module"></script>
+</body>
+
+
+</html>
