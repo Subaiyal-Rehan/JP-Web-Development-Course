@@ -15,8 +15,7 @@
 </head>
 
 <body>
-  <div
-    class="Navbar bg-dark-subtle p-3 border-bottom border-black border-opacity-25">
+  <div class="Navbar bg-dark-subtle p-3 border-bottom border-black border-opacity-25">
     <div class="Logo fs-1">
       <img class="img-fluid" width="55" src="Logo.png">
       RegisterEase
@@ -25,12 +24,15 @@
       <input class="border border-black border-opacity-50 rounded-3 px-2 fs-5" type="search"
         placeholder="Find Form by ID" id="searchIdInput">
       <button onclick="searchID()" class="btn btn-success rounded-3">Search</button>
+      <a href="forms.html">
+        <button class="btn btn-outline-dark rounded-3 h-100 w-100">View Submitted Forms</button>
+      </a>
     </div>
   </div>
 
   <div id="mainContainer">
     <h1 class="text-center fw-semibold display-4 mb-0 mb-0 mt-5">Fill the Registeration Form below</h1>
-    <div class="container p-4 mt-4 mb-4 bg-dark-subtle border rounded-3">
+    <div class="container p-4 my-4 bg-dark-subtle border rounded-3">
       <form id="mainForm" action="">
         <!-- Full Name, Father Name -->
         <div class="row">

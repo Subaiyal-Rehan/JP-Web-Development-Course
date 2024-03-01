@@ -30,6 +30,7 @@ const analytics = getAnalytics(app);
 const database = getDatabase();
 
 
+var mainForm = document.getElementById('mainForm')
 var mainContainer = document.getElementById('mainContainer');
 var resultContainer = document.getElementById('resultContainer');
 var fullName = document.getElementById('fullName');
@@ -83,7 +84,7 @@ window.submitBtn = function () {
   submitModal.show();
 }
 
-document.getElementById('mainForm').addEventListener('submit', function (event) {
+mainForm.addEventListener('submit', function (event) {
   event.preventDefault();
   for (let i = 0; i < inputsValueArray.length; i++) {
     inputsValueArray[i].value = "";
