@@ -29,6 +29,11 @@
     display: none !important;
 }
 
+#FormsUl {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
 @media screen and (max-width: 1060px) {
     .Navbar {
         display: block;
@@ -42,6 +47,18 @@
 
     .NavbarIn {
         justify-content: center !important;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    #FormsUl {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .submittedFormsContainer h2 {
+        text-align: center;
     }
 }
 

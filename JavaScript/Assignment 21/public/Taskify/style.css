@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to top right, #589eff, #a378f4);
+}
+
+.userBlock {
+    transition: all 0.2s ease-in-out;
+}
+
+.userBlock:hover {
+    background: linear-gradient(to top right, #69a6fc, #a378f4) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.customContainer {
+    max-width: 1700px;
+}
+
+.inputList {
+    font-size: 28px;
+    width: 92%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.btnContainerJava {
+    display: flex;
+    gap: 8px;
+}
+
+.listContainer {
+    padding: 8px;
+    margin: 15px 5px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    box-shadow: 4px 3px 5px -3px rgba(0, 0, 0, 0.558);
+    transition: all 0.2s ease-in-out;
+}
+
+.listContainer:hover {
+    transform: translateY(-2.5px);
+    box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.558);
+}
+
+.bg-logo-black {
+    background-color: #070c16 !important;
+}
+
+.bg-logo-lightBlack {
+    background-color: #373463 !important;
+}
+
+.btn-logo {
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-image: linear-gradient(to bottom right, #589eff, #a378f4);
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-logo:hover {
+    outline: 2px solid white;
+}

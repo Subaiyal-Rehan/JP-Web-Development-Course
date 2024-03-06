@@ -46,7 +46,7 @@ function allSubmittedNames() {
         }
         for (let i = 0; i < namesArray.length; i++) {
             numberOfForms.innerHTML = namesArray.length;
-            FormsUl.innerHTML += `<li id="FormName" class="my-3">Name: <span>${namesArray[i]}</span></li>`;
+            FormsUl.innerHTML += `<li id="FormName" class="my-2">Name: <span>${namesArray[i]}</span></li>`;
         }
         if (namesArray != 0) {
             noteSpan.innerHTML = "Please note: The information submitted is private and confidential. We are unable to disclose their personal information to you."

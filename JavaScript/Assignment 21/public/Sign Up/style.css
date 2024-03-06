@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to top right, #589eff, #a378f4);
+}
+
+.customContainer {
+    width: 420px;
+    margin: auto;
+    box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.472);
+}
+
+.bg-logo-black {
+    background-color: #070c16 !important;
+}
+
+.bg-logo-lightBlack {
+    background-color: #373463 !important;
+}
+
+.btn-logo {
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-image: linear-gradient(to bottom right, #589eff, #a378f4);
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-logo:hover {
+    outline: 2px solid white;
+}
