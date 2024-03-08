@@ -80,6 +80,32 @@ window.signOutUser = function (e) {
     window.modalClose = function () { }
 }
 
+window.userProfile = (e) => {
+    e.preventDefault();
+    document.getElementById('mainContainer').style.display = "none";
+    document.getElementById('profileContainer').style.display = "block";
+
+    document.getElementById('UserUL').innerHTML = `
+    <li onclick="goBack(event)"><a class="dropdown-item" href="">Go Back</a></li>`
+
+
+    var childrensTag = document.getElementById('profileContainer').children;
+    childrensTag[1].innerHTML = `User Name: ${userObj.userName}`
+    childrensTag[2].innerHTML = `Email Address: ${userObj.email}`
+    childrensTag[3].innerHTML = `Password: ${userObj.password}`
+}
+
+window.goBack = function (e) {
+    e.preventDefault();
+    document.getElementById('mainContainer').style.display = "block";
+    document.getElementById('profileContainer').style.display = "none";
+
+    document.getElementById('UserUL').innerHTML = `
+    <li onclick="userProfile(event)"><a class="dropdown-item" href="">Profile</a></li>
+    <li class="dropdown-divider"></li>
+    <li onclick="signOutUser(event)"><a class="dropdown-item" href="">Sign out</a></li>`
+}
+
 var reference = ref(database, `Users/${userObj.id}/Todos/`);
 onValue(reference, function name(data) {
     main.innerHTML = "";

@@ -32,7 +32,9 @@
                                 <span id="userNameSpan"></span>
                                 <i class="fa-solid fa-circle-user fs-1"></i>
                             </a>
-                            <ul class="dropdown-menu text-small">
+                            <ul id="UserUL" class="dropdown-menu text-small">
+                                <li onclick="userProfile(event)"><a class="dropdown-item" href="">Profile</a></li>
+                                <li class="dropdown-divider"></li>
                                 <li onclick="signOutUser(event)"><a class="dropdown-item" href="">Sign out</a></li>
                             </ul>
                         </div>
@@ -40,25 +42,39 @@
                 </div>
             </div>
         </div>
-        <div class="px-3 py-2 border-bottom mb-3 bg-body-secondary">
-            <div class="customContainer mx-auto">
-                <form onsubmit="addTask(event)" class="row gap-2">
-                    <input required class="col-lg-10 col-md-12 fs-1 rounded border-1 border-dark-subtle form-control"
-                        placeholder="Enter your tasks" type="text" name="addTaskInput" id="addTaskInput">
-                    <div class="col-lg-3 col-md-12 mx-auto row gap-1">
-                        <button type="submit" class="btn fs-5 p-2 btn-success col-lg-5 col-md-8">Add</button>
-                        <button onclick="deleteAll(event)" class="btn fs-5 p-2 btn-danger col-lg-5 col-md-3">Delete
-                            All</button>
-                    </div>
-                </form>
-            </div>
-        </div>
     </header>
 
+
     <main>
-        <div id="tasksContainer"></div>
+        <div id="mainContainer">
+
+            <div id="inputContainer" class="px-3 py-2 border-bottom mb-3 bg-body-secondary">
+                <div class="customContainer mx-auto">
+                    <form onsubmit="addTask(event)" class="row gap-2">
+                        <input required
+                            class="col-lg-10 col-md-12 fs-1 rounded border-1 border-dark-subtle form-control"
+                            placeholder="Enter your tasks" type="text" name="addTaskInput" id="addTaskInput">
+                        <div class="col-lg-3 col-md-12 mx-auto row gap-1">
+                            <button type="submit" class="btn fs-5 p-2 btn-success col-lg-5 col-md-8">Add</button>
+                            <button onclick="deleteAll(event)" class="btn fs-5 p-2 btn-danger col-lg-5 col-md-3">Delete
+                                All</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div id="tasksContainer"></div>
+        </div>
+
+        <div id="profileContainer" class="container bg-logo-black text-white p-3 mt-5 rounded">
+            <h1 class="mb-5">Your Profile</h1>
+            <h2 class="mb-5"></h2>
+            <h2 class="mb-5"></h2>
+            <h2 class="mb-5"></h2>
+            <button onclick="goBack(event)" class="btn btn-logo btn-lg">Go back</button>
+        </div>
     </main>
-    
+
     <!-- Modal -->
     <div class="modal fade" id="modalContainer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">

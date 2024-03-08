@@ -52,6 +52,10 @@ body {
     box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.558);
 }
 
+#profileContainer {
+    display: none;
+}
+
 .bg-logo-black {
     background-color: #070c16 !important;
 }
