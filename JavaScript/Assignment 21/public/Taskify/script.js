@@ -1,5 +1,4 @@
 import getSignUpUser from "../Sign Up/signUp.js";
-import getSignInUser from "../signIn.js";
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
@@ -43,7 +42,7 @@ var modalBody = document.getElementById("exampleModalBody");
 var modalBtn = document.getElementById("modalButton");
 var modalContainer = new bootstrap.Modal(document.getElementById('modalContainer'));
 
-let signInObj = getSignInUser();
+let signInObj = JSON.parse(localStorage.getItem('userObject')) || {};
 let signUpObj = getSignUpUser();
 var userObj;
 
@@ -108,23 +107,27 @@ window.goBack = function (e) {
 
 var reference = ref(database, `Users/${userObj.id}/Todos/`);
 onValue(reference, function name(data) {
+    if (data.val() == null) {
+        main.innerHTML = `<h2 class="fw-bold text-black fs-1">It seems like there are no tasks added yet. Once you add  them, they will appear here.</h2>`;
+        return;
+    }
     main.innerHTML = "";
-    if (data.val() == null) { return; }
 
     for (let i = 0; i < Object.values(data.val()).length; i++) {
         var div = document.createElement('DIV');
-        div.setAttribute('class', 'listContainer bg-logo-black text-white')
+        div.setAttribute('class', 'listContainer bg-logo-black text-white row')
         main.appendChild(div);
 
-        var inputList = document.createElement('INPUT');
-        inputList.setAttribute('class', 'inputList');
+        var inputList = document.createElement('textarea');
+        var inputListTxt = document.createTextNode(Object.values(data.val()).reverse()[i].value)
+        inputList.setAttribute('class', 'inputList col-lg-11');
         inputList.setAttribute('type', 'text');
-        inputList.setAttribute('value', Object.values(data.val()).reverse()[i].value);
         inputList.disabled = true;
+        inputList.appendChild(inputListTxt);
         div.appendChild(inputList);
 
         var div2 = document.createElement('DIV');
-        div2.setAttribute('class', 'btnContainerJava')
+        div2.setAttribute('class', 'btnContainerJava col-lg-1')
         div.appendChild(div2);
 
         var button2 = document.createElement('BUTTON');

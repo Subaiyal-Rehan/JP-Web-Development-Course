@@ -23,11 +23,8 @@
             </div>
 
             <div class="form-floating my-2">
-                <input required type="text" class="form-control fs-5" id="userNameInp" placeholder="Enter user name">
-                <label for="userNameInp">User Name</label>
-            </div>
-            <div class="form-floating my-2">
-                <input required type="email" class="form-control fs-5" id="emailAddressInp" placeholder="name@example.com">
+                <input required type="email" class="form-control fs-5" id="emailAddressInp"
+                    placeholder="name@example.com">
                 <label for="emailAddressInp">Email address</label>
             </div>
             <div class="form-floating my-2">
@@ -63,6 +60,21 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="signIn.js" type="module"></script>
+    <script>
+        var modalHeading = document.getElementById("exampleModalLabel");
+        var modalBody = document.getElementById("exampleModalBody");
+        var modalContainer = new bootstrap.Modal( document.getElementById("modalContainer") );
+        if (localStorage.getItem("userObject")) {
+            modalHeading.classList.add("text-success");
+            modalHeading.classList.remove("text-danger");
+            modalHeading.innerHTML = `Already Logged In <i class="fa-solid fa-circle-check"></i>`;
+            modalBody.innerHTML = "You are already logged in to your account. No action is required at this time.";
+            modalContainer.show();
+            var modalElement = document.getElementById("modalContainer");
+            modalElement.addEventListener('hidden.bs.modal', () => { window.location.href = 'Taskify/index.html'; });
+            window.modalClose = function () { window.location.href = 'Taskify/index.html'; }
+        }
+    </script>
 </body>
 
 </html>

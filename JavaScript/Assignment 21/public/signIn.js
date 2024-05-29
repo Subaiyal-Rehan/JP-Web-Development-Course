@@ -40,28 +40,13 @@ var modalContainer = new bootstrap.Modal(
   document.getElementById("modalContainer")
 );
 
-var userNameInp = document.getElementById("userNameInp");
 var emailAddressInp = document.getElementById("emailAddressInp");
 var passwordInp = document.getElementById("passwordInp");
 var obj = {};
 
-loadObjFromStorage();
-
-function loadObjFromStorage() {
-  var storedObj = localStorage.getItem('obj');
-  if (storedObj) {
-    obj = JSON.parse(storedObj);
-  }
-}
-
-function saveObjToStorage() {
-  localStorage.setItem('obj', JSON.stringify(obj));
-}
-
 window.signInForm = function (e) {
   e.preventDefault();
 
-  obj.userName = userNameInp.value;
   obj.email = emailAddressInp.value;
   obj.password = passwordInp.value;
 
@@ -69,20 +54,22 @@ window.signInForm = function (e) {
     .then(function (response) {
       obj.id = response.user.uid;
 
-      saveObjToStorage()
+      var reference = ref(database, `Users/${obj.id}`);
+      onValue(reference, (data) => {
+        saveObjToStorage(data.val())
 
-      userNameInp.value = "";
-      emailAddressInp.value = "";
-      passwordInp.value = "";
+        emailAddressInp.value = "";
+        passwordInp.value = "";
 
-      modalHeading.classList.add("text-success");
-      modalHeading.classList.remove("text-danger");
-      modalHeading.innerHTML = `Sign In Successful <i class="fa-solid fa-circle-check"></i>`;
-      modalBody.innerHTML = "You have successfully signed in! Welcome back to <b>Taskify</b>";
-      modalContainer.show();
-      var modalElement = document.getElementById("modalContainer");
-      modalElement.addEventListener('hidden.bs.modal', () => { window.location.href = 'Taskify/index.html'; });
-      window.modalClose = function () { }
+        modalHeading.classList.add("text-success");
+        modalHeading.classList.remove("text-danger");
+        modalHeading.innerHTML = `Sign In Successful <i class="fa-solid fa-circle-check"></i>`;
+        modalBody.innerHTML = "You have successfully signed in! Welcome back to <b>Taskify</b>";
+        modalContainer.show();
+        var modalElement = document.getElementById("modalContainer");
+        modalElement.addEventListener('hidden.bs.modal', () => { window.location.href = 'Taskify/index.html'; });
+        window.modalClose = function () { }
+      })
     })
     .catch(function (response) {
       modalHeading.classList.add("text-danger");
@@ -97,7 +84,6 @@ window.signInForm = function (e) {
       window.modalClose = function () { }
     });
 };
-
-export default function getSignInUser() {
-  return obj;
+function saveObjToStorage(object) {
+  localStorage.setItem('userObject', JSON.stringify(object));
 }
